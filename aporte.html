@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tourney:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Bienvenidos a Todo Megaman</title>
+  </head>
+  <body class="gridContent">
+    <!--En esta parte esta el icono y el titulo del sitio web -->
+    <header class="gridHeader">
+      <a href="./index.html">
+        <img
+          class="logo"
+          src="./Imagenes de trabajo/Todo megaman logo.png"
+          alt="logo de la pagina"
+        />
+      </a>
+      <!--Aca esta la barra de menu-->
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a href="sagas.html">Sagas de Megaman</a>
+            <ul>
+              <li><a href="saga_clasica.html">Saga Clásica</a></li>
+              <li><a href="saga_x.html">Saga X</a></li>
+              <li><a href="saga_zero.html">Saga Zero</a></li>
+              <li><a href="saga_zx.html">Saga ZX</a></li>
+              <li><a href="saga_leyends.html">Saga Leyends</a></li>
+              <li>
+                <a href="saga_battle_network.html">Saga Battle Network</a>
+              </li>
+              <li><a href="saga_star_force.html">Saga Star Force</a></li>
+              <li><a href="otros.html">Spinoff y Cameos</a></li>
+            </ul>
+          </li>
+          <li><a href="soundtrack.html">Soundtrack destacado</a></li>
+          <li><a href="aporte.html">Aportar a la pagina</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="gridMain">
+      <section>
+        <div class="formularioFlex">
+          <h1 class="centrarTexto">Ayudanos a crecer</h1>
+          <form class="formulario">
+            <div class="gridNombre">
+              <label for="nombreDelUsuario">Nombre:</label>
+              <input
+                type="text"
+                id="nombreDelUsuario"
+                name="nombre"
+                placeholder="Nombre del Usuario"
+              />
+            </div>
+            <div class="gridApellido">
+              <label for="apellidoDelUsuario">Apellido:</label>
+              <input
+                type="text"
+                id="apellidoDelUsuario"
+                name="apellido"
+                placeholder="Apellido del Usuario"
+              />
+            </div>
+            <div class="gridEmail">
+              <label for="emailDelUsuario">Email:</label>
+              <input
+                type="email"
+                id="emailDelUsuario"
+                name="email"
+                placeholder="Email del Usuario"
+              />
+            </div>
+            <div class="gridFan">
+              <p>¿Eres un fan de esta franquicia?</p>
+            </div>
+            <div class="gridSiNo">
+              <select name="fan" id="">
+                <option value="S">SI</option>
+                <option value="N">NO</option>
+              </select>
+            </div>
+            <div class="gridHombre">
+              <p>Hombre:</p>
+              <input type="radio" name="sexo" value="Hombre" />
+            </div>
+            <div class="gridMujer">
+              <p>Mujer:</p>
+              <input type="radio" name="sexo" value="Mujer" />
+            </div>
+
+            <div class="gridComunidad">
+              <p>¿Quierés ser parte de nuestra comunidad?</p>
+              <input type="checkbox" name="aceptar" value="formar parte" />
+            </div>
+            <div class="gridOpinion">
+              <p>Dejanos tu opiniòn</p>
+            </div>
+            <div class="gridTextarea">
+              <textarea
+                name="dinosTuOpinion"
+                id=""
+                cols="55"
+                rows="15"
+              ></textarea>
+            </div>
+            <div class="gridBorrar">
+              <input type="reset" value="Borrar datos" />
+            </div>
+            <div class="gridEnviar">
+              <input type="submit" value="Enviar" />
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!--Este seria el pie de pagina donde estan los datos de copyright y los links de facebook y twitter -->
+    <footer class="gridFooter">
+      <div class="footerFlex">
+        <div>
+          <h4 class="copyright">©Marcos Herbas</h4>
+        </div>
+        <div>
+          <a href="https://www.facebook.com/" target="_blank"
+            ><img
+              class="contactos"
+              src="./Imagenes de trabajo/facebook logo.png"
+              alt="link de facebook"
+          /></a>
+        </div>
+        <div>
+          <a href="https://twitter.com/login" target="_blank"
+            ><img
+              class="contactosSegundo"
+              src="./Imagenes de trabajo/twitter link.png"
+              alt="link de twitter"
+          /></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
