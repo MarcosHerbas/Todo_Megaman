@@ -177,8 +177,6 @@ header {
   color: #f2f2f2;
   font-size: 2rem;
   right: 100rem;
-  /* display: inline-block;
-  margin: 6rem 2rem 5rem 1rem; */
 }
 .contactos {
   width: 5rem;
@@ -210,9 +208,7 @@ header {
   grid-template-areas: "nombre ... apellido" "email ... ..." "fan fan fan" "... siNo ..." "hombre hombre ..." "mujer mujer ..." "comunidad comunidad comunidad" "opinion ... ..." "textarea textarea textarea" "enviar ... borrar";
   border: 2px solid black;
   width: 50rem;
-  /* margin-left: 400px;
-  margin-top: 50px;
-  margin-bottom: 50px; */
+
   background-color: teal;
   font-size: 1.5rem;
 }
