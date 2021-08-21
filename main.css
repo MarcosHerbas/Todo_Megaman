@@ -7,11 +7,8 @@ html {
 }
 body {
   font-family: "Tourney", cursive;
-  background-color: blanchedalmond;
 }
-header {
-  background-color: #021859;
-}
+
 /* "-----------------------Aca van las ID------------------------" */
 
 #soloAudio {
@@ -19,16 +16,37 @@ header {
   border: 1px solid darkslategray;
 }
 #imagenS {
-  width: 40rem;
-  height: 25rem;
+  width: 55rem;
+  height: 28rem;
 }
 #imagenM {
-  width: 37rem;
+  width: 52rem;
   height: 40rem;
 }
 #imagenL {
-  width: 35rem;
+  width: 50rem;
   height: 50rem;
+}
+#sinPad {
+  padding-left: 0rem;
+  padding-right: 0rem;
+}
+#parrafos {
+  font-size: 2rem;
+}
+#titulo {
+  font-size: 6rem;
+  text-align: center;
+}
+#subtitulo {
+  font-size: 4rem;
+  text-align: center;
+}
+#carruselColorText {
+  opacity: 0.9;
+  background-color: black;
+  font-size: 1.2rem;
+  color: darkturquoise;
 }
 /* "-----------------------Aca van todos los class------------------------" */
 
@@ -37,146 +55,39 @@ header {
   width: 9rem;
   height: 9rem;
 }
+.mainBg {
+  background-color: blanchedalmond;
+}
+.bgBody {
+  background-image: url("./Imagenes\ de\ trabajo/megaman-bg.jpg");
+  background-size: 15rem;
+  background-repeat: repeat;
+}
 /* "------------Class solo para index.html------------" */
 
-.sectionIndex {
-  display: inline-block;
-  margin: 4rem;
-}
-.mainFlexIndex {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.sectionIndex__tituloPrincipal {
-  margin-bottom: 5rem;
-  font-size: 9rem;
-  text-align: center;
-}
 .imagenMain {
   width: 48rem;
   height: 36rem;
 }
-/* .sectionIndex__imagen {
-} */
-.sectionIndex__parrafo {
-  font-size: 3rem;
-  margin: 5rem 5rem 5rem 5rem;
-}
+
 /* Class para sagas.html  */
-.sectionSagas {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  font-size: 3rem;
-  margin: 4rem 4rem 4rem 4rem;
-}
-.sectionSagas__titulo {
-  font-size: 9rem;
-}
-.sectionSagas__parrafo {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-}
-.sectionSagas__subtitulo {
-  font-size: 5rem;
-  margin-top: 3rem;
-}
+
 /* "-------------Class para uso general-------------" */
 /* Estos se usaran repetidas veces para el contenido de todas las Sagas */
-.gridContent {
-  display: -ms-inline-grid;
-  grid-template-areas:
-    "head head"
-    "main main"
-    "foot foot";
-  grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto auto;
-  justify-items: self-start;
-  align-items: flex-start;
-}
-.gridHeader {
-  grid-area: head;
-}
-.gridMain {
-  grid-area: main;
-}
-.gridFooter {
-  grid-area: foot;
-}
-.sectionContent {
-  display: flex;
-  flex-direction: column;
-  margin: 4rem 4rem 4rem 4rem;
-  text-align: center;
-  font-size: 2.3rem;
-}
-.generalGridConTitulo {
-  display: grid;
-  grid-template-areas:
-    "titulo titulo"
-    "subtitulo subtitulo"
-    "imagen parrafo";
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto auto;
-  justify-items: center;
-  align-items: center;
-}
-.generalGridRight {
-  display: grid;
-  grid-template-areas: "subtitulo subtitulo" "parrafo imagen";
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
-  justify-items: center;
-  align-items: center;
-}
-.generalGridLeft {
-  display: grid;
-  grid-template-areas: "titulo titulo" "subtitulo subtitulo" "imagen parrafo";
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto auto;
-  justify-items: center;
-  align-items: center;
-}
-.sectionContent__titulo {
-  grid-area: titulo;
-  font-size: 9rem;
-}
-.sectionContent__subtitulo {
-  grid-area: subtitulo;
 
-  font-size: 5rem;
-  margin-top: 9rem;
-  margin-bottom: 4rem;
-}
-.sectionContent__parrafo {
-  grid-area: parrafo;
-
-  text-align: justify;
-}
-.imagenLeft {
-  grid-area: imagen;
-  /* float: left; */
+/* .imagenLeft {
   border: 1.5rem solid seagreen;
 }
 .imagenRight {
-  grid-area: imagen;
-  /* float: right; */
   border: 1.5rem solid purple;
-}
+} */
+
 /* --------------------------------------- */
-.footerFlex {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 1rem;
-}
+
 .copyright {
-  position: relative;
   color: #f2f2f2;
   font-size: 2rem;
-  right: 100rem;
+  width: auto;
 }
 .contactos {
   width: 5rem;
@@ -185,23 +96,23 @@ header {
   transform: scale(1.1);
 }
 .contactosSegundo {
-  margin-right: 2rem;
+  /* margin-right: 2rem; */
   width: 6.5rem;
 }
 .contactosSegundo:hover {
   transform: scale(1.1);
 }
-.estiloDeTabla {
+/* .estiloDeTabla {
   width: 100%;
   text-align: center;
   background-color: cadetblue;
-}
+} */
 .centrarTexto {
   text-align: center;
-  font-size: 7rem;
+  font-size: 1.2rem;
 }
 /* ----------------------------Grid y Flex para Aporte------------------------------------ */
-.formulario {
+/* .formulario {
   display: grid;
   grid-template-columns: 4fr 1fr 4fr;
   grid-template-rows: 2fr 2fr 2fr 2fr 2fr 2fr;
@@ -254,54 +165,15 @@ header {
   flex-direction: column;
   align-items: center;
   gap: 4rem;
+} */
+/* "---------------------------Esto es para el menu principal-----------------------------" */
+.iconNav {
+  width: 3rem;
+  height: 3rem;
 }
-/* "---------------------------Esto es el menu principal-----------------------------" */
-nav {
-  font-size: 1.5rem;
-}
-nav ul {
-  list-style: none;
-  padding: 0%;
-}
-nav li {
-  line-height: 3rem;
-  position: relative;
-}
-nav li ul {
-  position: absolute;
-}
-nav a {
-  color: #ddd;
-  display: block;
-  padding: 0 2.5em;
-  text-decoration: none;
-  transition: 0.4s;
-}
-nav a:hover {
-  background: rgba(0, 0, 0, 0.5);
-}
-nav li ul {
-  display: none;
-}
-nav li:hover ul {
-  display: block;
-}
-nav > ul {
-  background: #333;
-  display: table;
-  width: 100%;
-}
-nav > ul > li {
-  float: left;
-}
-nav li li {
-  background: #222;
-}
-nav > ul > li > ul {
-  top: 100%;
-}
+
 /* "-----------------Esto es la tabla de sagas.html-------------------" */
-table,
+/* table,
 th,
 td {
   border: 2px solid black;
@@ -311,8 +183,10 @@ td {
 th,
 td {
   padding: 15px;
-}
+} */
 /* "---------------Esto es para la etiqueta footer----------------" */
-footer {
-  background-color: #021859;
+
+.adaptar {
+  width: auto;
+  height: auto;
 }
