@@ -4,7 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CSS -->
     <link rel="stylesheet" href="main.css" />
+    <!-- TIPOGRAFIA -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,52 +27,207 @@
     />
     <title>Bienvenidos a Todo Megaman</title>
   </head>
-  <body class="gridContent">
+  <body id="sinPad" class="container-fluid bgBody">
     <!--En esta parte esta el icono y el titulo del sitio web -->
-    <header class="gridHeader">
-      <a href="./index.html">
-        <img
-          class="logo"
-          src="./Imagenes de trabajo/Todo megaman logo.png"
-          alt="logo de la pagina"
-        />
-      </a>
-      <!--Aca esta la barra de menu-->
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li>
-            <a href="sagas.html">Sagas de Megaman</a>
-            <ul>
-              <li><a href="saga_clasica.html">Saga Clásica</a></li>
-              <li><a href="saga_x.html">Saga X</a></li>
-              <li><a href="saga_zero.html">Saga Zero</a></li>
-              <li><a href="saga_zx.html">Saga ZX</a></li>
-              <li><a href="saga_leyends.html">Saga Leyends</a></li>
-              <li>
-                <a href="saga_battle_network.html">Saga Battle Network</a>
+    <header id="sinPad" class="container-fluid">
+      <!------------------Aca esta la barra de menu-------------------->
+      <nav
+        id="parrafos"
+        class="navbar navbar-expand-lg navbar navbar-dark bg-dark"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"
+            ><img
+              class="logo"
+              src="./Imagenes de trabajo/Todo megaman logo.png"
+              alt="logo de la pagina"
+            />
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon iconNav"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Home</a
+                >
               </li>
-              <li><a href="saga_star_force.html">Saga Star Force</a></li>
-              <li><a href="otros.html">Spinoff y Cameos</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="sagas.html">linea temporal</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="soundtrack.html"
+                  >Soundtracks destacados</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="aporte.html">Aportar a la pagina</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Sagas
+                </a>
+                <ul
+                  id="parrafos"
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li>
+                    <a class="dropdown-item" href="saga_clasica.html"
+                      >saca clasica</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="saga_x.html">saga X</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="saga_zero.html">saga Zero</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="saga_zx.html">saga ZX</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="saga_leyends.html"
+                      >saga Leyends</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="saga_battle_network.html"
+                      >saga Battle Network</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="saga_star_force.html"
+                      >saga Star Force</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="otros.html"
+                      >Spinoff y Cameos</a
+                    >
+                  </li>
+                </ul>
+              </li>
             </ul>
-          </li>
-          <li><a href="soundtrack.html">Soundtrack destacado</a></li>
-          <li><a href="aporte.html">Aportar a la pagina</a></li>
-        </ul>
+          </div>
+        </div>
       </nav>
+      <!-- ------------------------------------------------ -->
     </header>
-    <main class="gridMain">
-      <section class="sectionContent">
-        <article class="generalGridConTitulo">
-          <h1 class="sectionContent__titulo">"Saga Clasica"</h1>
-          <h2 class="sectionContent__subtitulo">Megaman I</h2>
-          <img
-            id="imagenS"
-            class="imagenLeft"
-            src="./Imagenes de trabajo/saga clasica/megaman clasic portada 1.jpg"
-            alt="rockman1"
-          />
-          <p class="sectionContent__parrafo">
+    <main class="container mainBg">
+      <section class="row justify-content-end">
+        <article class="row justify-content-center">
+          <h1 id="titulo">"Saga Clasica"</h1>
+          <h2 id="subtitulo">Megaman I</h2>
+          <div class="row justify-content-center">
+            <div id="imagenS">
+              <div
+                id="carouselExampleCaptions"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      id="imagenS"
+                      src="./Imagenes de trabajo/saga clasica/megaman clasic portada 1.jpg"
+                      class="d-block"
+                      alt="rockman 1"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Portada del juego</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      id="imagenS"
+                      src="./Imagenes de trabajo/saga clasica/megaman 1 menu.jpg"
+                      class="d-block"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Menú principal</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      id="imagenS"
+                      src="./Imagenes de trabajo/saga clasica/megaman 1 gameplay.jpg"
+                      class="d-block"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Imagen de Gameplay</p>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <p id="parrafos">
             En el año 200X, los robots desarrollados para ayudar a la humanidad
             son comunes gracias a los esfuerzos del reconocido diseñador de
             robots Dr. Light. Sin embargo, un día estos robots se descontrolan y
@@ -77,15 +246,100 @@
             regresa con su familia.
           </p>
         </article>
-        <article class="generalGridRight">
-          <h2 class="sectionContent__subtitulo">Megaman II</h2>
-          <img
-            id="imagenS"
-            class="imagenRight"
-            src="./Imagenes de trabajo/saga clasica/megaman 2.jpg"
-            alt="rockman2"
-          />
-          <p class="sectionContent__parrafo">
+        <article class="row justify-content-center">
+          <h2 id="subtitulo">Megaman II</h2>
+          <div class="row justify-content-center">
+            <div id="imagenS">
+              <div
+                id="carouselExampleCaptions"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      id="imagenS"
+                      src="./Imagenes de trabajo/saga clasica/megaman 2.jpg"
+                      class="d-block"
+                      alt="rockman 1"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Portada del juego</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      id="imagenS"
+                      src="./Imagenes de trabajo/saga clasica/megaman 2 menu.jpg"
+                      class="d-block"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Menú principal</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      id="imagenS"
+                      src="./Imagenes de trabajo/saga clasica/megaman 2 gameplay.jpg"
+                      class="d-block"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Imagen de Gameplay</p>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <p id="parrafos">
             MegaMan 2 tiene lugar un año después del MegaMan original. Después
             de su derrota inicial, el Dr. Wily, el principal antagonista de la
             serie, crea su propio conjunto de Robot Masters en un intento de
@@ -104,15 +358,100 @@
           </p>
         </article>
 
-        <article class="generalGridLeft">
-          <h2 class="sectionContent__subtitulo">Megaman III</h2>
-          <img
-            id="imagenS"
-            class="imagenLeft"
-            src="./Imagenes de trabajo/saga clasica/megaman 3.jpg"
-            alt="rockman3"
-          />
-          <p class="sectionContent__parrafo">
+        <article class="row justify-content-center">
+          <h2 id="subtitulo">Megaman III</h2>
+          <div class="row justify-content-center">
+            <div id="imagenS">
+              <div
+                id="carouselExampleCaptions"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      id="imagenS"
+                      src="./Imagenes de trabajo/saga clasica/megaman 3.jpg"
+                      class="d-block"
+                      alt="rockman 1"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Portada del juego</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      id="imagenS"
+                      src="./Imagenes de trabajo/saga clasica/megaman 3 menu.jpg"
+                      class="d-block"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Menú principal</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      id="imagenS"
+                      src="./Imagenes de trabajo/saga clasica/megaman 3 gameplay.png"
+                      class="d-block"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Imagen de Gameplay</p>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <p id="parrafos">
             Comienza explicando hechos ocurridos antes de MegaMan(juego), Dr.
             Light crea un robot al cual llama Proto Man, el robot escapa sin
             dejar rastro, el Dr. Light decide no quedarse en el pasado y crea a
@@ -124,15 +463,100 @@
             debe salir y destruir los 8 Robots Masters.
           </p>
         </article>
-        <article class="generalGridRight">
-          <h2 class="sectionContent__subtitulo">Megaman IV</h2>
-          <img
-            id="imagenS"
-            class="imagenRight"
-            src="./Imagenes de trabajo/saga clasica/megaman 4.jpg"
-            alt="rockman4"
-          />
-          <p class="sectionContent__parrafo">
+        <article class="row justify-content-center">
+          <h2 id="subtitulo">Megaman IV</h2>
+          <div class="row justify-content-center">
+            <div id="imagenS">
+              <div
+                id="carouselExampleCaptions"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      id="imagenS"
+                      src="./Imagenes de trabajo/saga clasica/megaman 4.jpg"
+                      class="d-block"
+                      alt="rockman 1"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Portada del juego</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      id="imagenS"
+                      src="./Imagenes de trabajo/saga clasica/megaman 4 menu.jpg"
+                      class="d-block"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Menú principal</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      id="imagenS"
+                      src="./Imagenes de trabajo/saga clasica/megaman 4 gameplay.jpg"
+                      class="d-block"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Imagen de Gameplay</p>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <p id="parrafos">
             Todo comienza después de la "supuesta" muerte de Dr. Wily, todo era
             paz y tranquilidad hasta que el Dr. Cossack, un científico ruso,
             crea 8 Robots Masters para perturbar la paz, MegaMan es forzado a
@@ -144,15 +568,100 @@
           </p>
         </article>
 
-        <article class="generalGridLeft">
-          <h2 class="sectionContent__subtitulo">Megaman V</h2>
-          <img
-            id="imagenS"
-            class="imagenLeft"
-            src="./Imagenes de trabajo/saga clasica/megaman 5.jpg"
-            alt="rockman5"
-          />
-          <p class="sectionContent__parrafo">
+        <article class="row justify-content-center">
+          <h2 id="subtitulo">Megaman V</h2>
+          <div class="row justify-content-center">
+            <div id="imagenS">
+              <div
+                id="carouselExampleCaptions"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      id="imagenS"
+                      src="./Imagenes de trabajo/saga clasica/megaman 5.jpg"
+                      class="d-block"
+                      alt="rockman 1"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Portada del juego</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      id="imagenS"
+                      src="./Imagenes de trabajo/saga clasica/megaman 5 menu.jpg"
+                      class="d-block"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Menú principal</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      id="imagenS"
+                      src="./Imagenes de trabajo/saga clasica/megaman 5 gameplay.jpg"
+                      class="d-block"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Imagen de Gameplay</p>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <p id="parrafos">
             Esta historia toma lugar dos meses después de los acontecimientos de
             MegaMan 4, cuando el científico loco Dr. Wily, una vez más trata de
             apoderarse del mundo.​ Proto Man, hermano de MegaMan y en su día
@@ -175,15 +684,100 @@
           </p>
         </article>
 
-        <article class="generalGridRight">
-          <h2 class="sectionContent__subtitulo">Megaman VI</h2>
-          <img
-            id="imagenS"
-            class="imagenRight"
-            src="./Imagenes de trabajo/saga clasica/megaman 6.jpg"
-            alt="rockman6"
-          />
-          <p class="sectionContent__parrafo">
+        <article class="row justify-content-center">
+          <h2 id="subtitulo">Megaman VI</h2>
+          <div class="row justify-content-center">
+            <div id="imagenS">
+              <div
+                id="carouselExampleCaptions"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      id="imagenS"
+                      src="./Imagenes de trabajo/saga clasica/megaman 6.jpg"
+                      class="d-block"
+                      alt="rockman 1"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Portada del juego</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      id="imagenS"
+                      src="./Imagenes de trabajo/saga clasica/megaman 6 menu.png"
+                      class="d-block"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Menú principal</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      id="imagenS"
+                      src="./Imagenes de trabajo/saga clasica/megaman 6 gameplay.jpg"
+                      class="d-block"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Imagen de Gameplay</p>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <p id="parrafos">
             Los diseñadores de robots más talentosos de todo el mundo han
             llegado al primer Torneo Anual Robot patrocinado por el
             multimillonario Mr. X. Viajando desde varios países, los diseñadores
@@ -197,15 +791,100 @@
           </p>
         </article>
 
-        <article class="generalGridLeft">
-          <h2 class="sectionContent__subtitulo">Megaman VII</h2>
-          <img
-            id="imagenM"
-            class="imagenLeft"
-            src="./Imagenes de trabajo/saga clasica/megaman 7.jpg"
-            alt="rockman7"
-          />
-          <p class="sectionContent__parrafo">
+        <article class="row justify-content-center">
+          <h2 id="subtitulo">Megaman VII</h2>
+          <div class="row justify-content-center">
+            <div id="imagenM">
+              <div
+                id="carouselExampleCaptions"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      id="imagenM"
+                      src="./Imagenes de trabajo/saga clasica/megaman 7.jpg"
+                      class="d-block"
+                      alt="rockman 1"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Portada del juego</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      id="imagenM"
+                      src="./Imagenes de trabajo/saga clasica/megaman 7 menu.jpg"
+                      class="d-block"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Menú principal</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      id="imagenM"
+                      src="./Imagenes de trabajo/saga clasica/megaman 7 gameplay.gif"
+                      class="d-block"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Imagen de Gameplay</p>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <p id="parrafos">
             Seis meses después del encarcelamiento del Dr. Wily, 4 robots que
             estaban ocultos en su laboratorio se activan y lo sacan de la cárcel
             y comenzaron a causar estragos en la ciudad. MegaMan fue a
@@ -230,15 +909,100 @@
           </p>
         </article>
 
-        <article class="generalGridRight">
-          <h2 class="sectionContent__subtitulo">Megaman VIII</h2>
-          <img
-            id="imagenM"
-            class="imagenRight"
-            src="./Imagenes de trabajo/saga clasica/megaman 8.jpg"
-            alt="rockman8"
-          />
-          <p class="sectionContent__parrafo">
+        <article class="row justify-content-center">
+          <h2 id="subtitulo">Megaman VIII</h2>
+          <div class="row justify-content-center">
+            <div id="imagenM">
+              <div
+                id="carouselExampleCaptions"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      id="imagenM"
+                      src="./Imagenes de trabajo/saga clasica/megaman 8.jpg"
+                      class="d-block"
+                      alt="rockman 1"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Portada del juego</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      id="imagenM"
+                      src="./Imagenes de trabajo/saga clasica/megaman 8 menu.jpg"
+                      class="d-block"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Menú principal</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      id="imagenM"
+                      src="./Imagenes de trabajo/saga clasica/megaman 8 gameplay.jpg"
+                      class="d-block"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Imagen de Gameplay</p>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <p id="parrafos">
             La historia comienza con 2 alienigenas robots peleandose y terminan
             cayendo en la tierra, mientras tanto MegaMan y su compañero Rush
             estan peleando con Bass y Treble. MegaMan es alertado por Dr. Light
@@ -275,15 +1039,100 @@
           </p>
         </article>
 
-        <article class="generalGridLeft">
-          <h2 class="sectionContent__subtitulo">Megaman&Bass</h2>
-          <img
-            id="imagenM"
-            class="imagenLeft"
-            src="./Imagenes de trabajo/saga clasica/megaman&bass.jpg"
-            alt="rockman&Bass"
-          />
-          <p class="sectionContent__parrafo">
+        <article class="row justify-content-center">
+          <h2 id="subtitulo">Megaman&Bass</h2>
+          <div class="row justify-content-center">
+            <div id="imagenM">
+              <div
+                id="carouselExampleCaptions"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      id="imagenM"
+                      src="./Imagenes de trabajo/saga clasica/megaman&bass.jpg"
+                      class="d-block"
+                      alt="rockman 1"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Portada del juego</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      id="imagenM"
+                      src="./Imagenes de trabajo/saga clasica/megaman&bass menu.png"
+                      class="d-block"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Menú principal</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      id="imagenM"
+                      src="./Imagenes de trabajo/saga clasica/megaman&bass gameplay.jpg"
+                      class="d-block"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Imagen de Gameplay</p>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <p id="parrafos">
             Esto ocurre 1 año despues de lo ocurrido en la anterior entrega
             (Megaman 8). Un nuevo robot con el nombre de King aparece
             autoproclamandose como el más fuerte y deseando crear una utopía
@@ -310,15 +1159,100 @@
           </p>
         </article>
 
-        <article class="generalGridRight">
-          <h2 class="sectionContent__subtitulo">Megaman IX</h2>
-          <img
-            id="imagenM"
-            class="imagenRight"
-            src="./Imagenes de trabajo/saga clasica/megaman 9.jpg"
-            alt="rockman9"
-          />
-          <p class="sectionContent__parrafo">
+        <article class="row justify-content-center">
+          <h2 id="subtitulo">Megaman IX</h2>
+          <div class="row justify-content-center">
+            <div id="imagenM">
+              <div
+                id="carouselExampleCaptions"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      id="imagenM"
+                      src="./Imagenes de trabajo/saga clasica/megaman 9.jpg"
+                      class="d-block"
+                      alt="rockman 1"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Portada del juego</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      id="imagenM"
+                      src="./Imagenes de trabajo/saga clasica/megaman 9 menu.jpg"
+                      class="d-block"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Menú principal</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      id="imagenM"
+                      src="./Imagenes de trabajo/saga clasica/megaman 9 gameplay.jpg"
+                      class="d-block"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Imagen de Gameplay</p>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <p id="parrafos">
             Esta entrega empieza con ya 8 Robots Master provocando caos en la
             ciudad por un momento todo apunta que es Wily otra vez pero este
             sale a declarar que esta vez no es el ya que cambio como persona,
@@ -336,15 +1270,100 @@
           </p>
         </article>
 
-        <article class="generalGridLeft">
-          <h2 class="sectionContent__subtitulo">Megaman X(10)</h2>
-          <img
-            id="imagenS"
-            class="imagenLeft"
-            src="./Imagenes de trabajo/saga clasica/megaman 10.jpg"
-            alt="rockman10"
-          />
-          <p class="sectionContent__parrafo">
+        <article class="row justify-content-center">
+          <h2 id="subtitulo">Megaman X(10)</h2>
+          <div class="row justify-content-center">
+            <div id="imagenS">
+              <div
+                id="carouselExampleCaptions"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      id="imagenS"
+                      src="./Imagenes de trabajo/saga clasica/megaman 10.jpg"
+                      class="d-block"
+                      alt="rockman 1"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Portada del juego</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      id="imagenS"
+                      src="./Imagenes de trabajo/saga clasica/megaman 10 menu.jpg"
+                      class="d-block"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Menú principal</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      id="imagenS"
+                      src="./Imagenes de trabajo/saga clasica/megaman 10 gameplay.jpg"
+                      class="d-block"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Imagen de Gameplay</p>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <p id="parrafos">
             Cuando todo estaba en paz una enfermedad azota la ciudad al cual
             solo ataca a los robots haciendo que funcionen mal, esta enfermedad
             es llamada Roboenza. 1 mes despues roll (su hermana) tambien contrae
@@ -376,15 +1395,100 @@
             suficiente para curar a todos los enfermos.
           </p>
         </article>
-        <article class="generalGridRight">
-          <h2 class="sectionContent__subtitulo">Megaman XI</h2>
-          <img
-            id="imagenM"
-            class="imagenRight"
-            src="./Imagenes de trabajo/saga clasica/megaman 11.jpg"
-            alt="rockman11"
-          />
-          <p class="sectionContent__parrafo">
+        <article class="row justify-content-center">
+          <h2 id="subtitulo">Megaman XI</h2>
+          <div class="row justify-content-center">
+            <div id="imagenL">
+              <div
+                id="carouselExampleCaptions"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      id="imagenL"
+                      src="./Imagenes de trabajo/saga clasica/megaman 11.jpg"
+                      class="d-block"
+                      alt="rockman 1"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Portada del juego</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      id="imagenL"
+                      src="./Imagenes de trabajo/saga clasica/megaman 11 menu.jpg"
+                      class="d-block"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Menú principal</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      id="imagenL"
+                      src="./Imagenes de trabajo/saga clasica/megaman 11 gameplay.jpg"
+                      class="d-block"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Imagen de Gameplay</p>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <p id="parrafos">
             Esta entrega empiza con un recuerdo muy lejano uno donde el Dr Light
             y Wily aun eran universitarios y estaban investigando la robotica,
             en ese entonces Wily habia creado un objeto que queria adherir a los
@@ -404,21 +1508,24 @@
       </section>
     </main>
     <!--Este seria el pie de pagina donde estan los datos de copyright y los links de facebook y twitter -->
-    <footer class="gridFooter">
-      <div class="footerFlex">
-        <div>
-          <h4 class="copyright">©Marcos Herbas</h4>
-        </div>
-        <div>
-          <a href="https://www.facebook.com/" target="_blank"
+    <footer id="sinPad" class="container-fluid bg-dark">
+      <div class="row align-items-center justify-content-between">
+        <p class="copyright col-sm-4">©Marcos Herbas</p>
+        <div class="row col-sm-8 justify-content-end align-items-center">
+          <a
+            class="adaptar col-sm-6"
+            href="https://www.facebook.com/"
+            target="_blank"
             ><img
               class="contactos"
               src="./Imagenes de trabajo/facebook logo.png"
               alt="link de facebook"
           /></a>
-        </div>
-        <div>
-          <a href="https://twitter.com/login" target="_blank"
+
+          <a
+            class="adaptar col-sm-6"
+            href="https://twitter.com/login"
+            target="_blank"
             ><img
               class="contactosSegundo"
               src="./Imagenes de trabajo/twitter link.png"
