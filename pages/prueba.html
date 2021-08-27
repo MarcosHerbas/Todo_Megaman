@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="main.css" />
+    <!-- TIPOGRAFIA -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tourney:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Bienvenidos a Todo Megaman</title>
+  </head>
+  <body id="sinPad" class="container-fluid bgBody">
+    <!--En esta parte esta el icono y el titulo del sitio web -->
+    <header id="sinPad" class="container-fluid">
+      <!------------------Aca esta la barra de menu-------------------->
+      <nav
+        id="parrafos"
+        class="navbar navbar-expand-lg navbar navbar-dark bg-dark"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"
+            ><img
+              class="logo"
+              src="./Imagenes de trabajo/Todo megaman logo.png"
+              alt="logo de la pagina"
+            />
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon iconNav"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sagas.html">linea temporal</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="soundtrack.html"
+                  >Soundtracks destacados</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="aporte.html">Aportar a la pagina</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Sagas
+                </a>
+                <ul
+                  id="parrafos"
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li>
+                    <a class="dropdown-item" href="saga_clasica.html"
+                      >saca clasica</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="saga_x.html">saga X</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="saga_zero.html">saga Zero</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="saga_zx.html">saga ZX</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="saga_leyends.html"
+                      >saga Leyends</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="saga_battle_network.html"
+                      >saga Battle Network</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="saga_star_force.html"
+                      >saga Star Force</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="otros.html"
+                      >Spinoff y Cameos</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- ------------------------------------------------ -->
+    </header>
+    <main class="container mainBg">
+      <h1 id="titulo">Ayudanos a Crecer</h1>
+      <div class="container w-75">
+        <form class="textoFormulario">
+          <div class="form-group row">
+            <label for="nombre" class="col-sm-2 col-form-label">Nombre</label>
+            <div class="col-sm-10">
+              <input
+                type="text"
+                class="form-control"
+                id="nombre"
+                placeholder="Nombre"
+              />
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="apellido" class="col-sm-2 col-form-label"
+              >Apellido</label
+            >
+            <div class="col-sm-10">
+              <input
+                type="text"
+                class="form-control"
+                id="apellido"
+                placeholder="Apellido"
+              />
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputEmail3" class="col-sm-2 col-form-label"
+              >Email</label
+            >
+            <div class="col-sm-10">
+              <input
+                type="email"
+                class="form-control"
+                id="inputEmail3"
+                placeholder="Email"
+              />
+            </div>
+          </div>
+          <fieldset class="form-group">
+            <div class="row">
+              <legend class="col-form-label col-sm-2 pt-0">Sexo</legend>
+              <div class="col-sm-10">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="gridRadios"
+                    id="gridRadios1"
+                    value="option1"
+                    checked
+                  />
+                  <label class="form-check-label" for="gridRadios1">
+                    Hombre
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="gridRadios"
+                    id="gridRadios2"
+                    value="option2"
+                  />
+                  <label class="form-check-label" for="gridRadios2">
+                    Mujer
+                  </label>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+          <div class="form-group row">
+            <div class="col-sm-2">Opcional</div>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="gridCheck1"
+                />
+                <label class="form-check-label" for="gridCheck1">
+                  ¿Quierés ser parte de nuestra comunidad?
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label"
+              >Dejanos tu opinión</label
+            >
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="10"
+            ></textarea>
+          </div>
+          <div class="row justify-content-between">
+            <div class="form-group row col-sm-6">
+              <div class="col-sm-10">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+              </div>
+            </div>
+            <div class="form-group row col-sm-6 justify-content-end">
+              <div class="col-sm-10">
+                <button type="reset" class="btn btn-primary">Borrar</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

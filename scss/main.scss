@@ -1,0 +1,117 @@
+* {
+  padding: 0em;
+  margin: 0em;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Tourney", cursive;
+}
+
+/* "-----------------------Aca van las ID------------------------" */
+
+#soloAudio {
+  margin: 200px;
+  border: 1px solid darkslategray;
+}
+#imagenS {
+  width: 55rem;
+  height: 28rem;
+}
+#imagenM {
+  width: 52rem;
+  height: 40rem;
+}
+#imagenL {
+  width: 50rem;
+  height: 50rem;
+}
+#sinPad {
+  padding-left: 0rem;
+  padding-right: 0rem;
+}
+#parrafos {
+  font-size: 2rem;
+}
+#titulo {
+  font-size: 6rem;
+  text-align: center;
+}
+#subtitulo {
+  font-size: 4rem;
+  text-align: center;
+}
+#carruselColorText {
+  opacity: 0.9;
+  background-color: black;
+  font-size: 1.2rem;
+  color: darkturquoise;
+}
+#bgFormulario {
+  background-image: url("../Imagenes\ de\ trabajo/background-formulario.jpg");
+  background-size: 100%;
+}
+/* "-----------------------Aca van todos los class------------------------" */
+
+.logo {
+  border: 0.3rem solid aquamarine;
+  width: 9rem;
+  height: 9rem;
+}
+.mainBg {
+  background-color: blanchedalmond;
+}
+.bgBody {
+  background-image: url("../Imagenes\ de\ trabajo/megaman-bg.jpg");
+  background-size: 15rem;
+  background-repeat: repeat;
+}
+/* "------------Class solo para index.html------------" */
+
+.imagenMain {
+  width: 48rem;
+  height: 36rem;
+}
+
+/* --------------------------------------- */
+
+.copyright {
+  color: #f2f2f2;
+  font-size: 2rem;
+  width: auto;
+}
+.contactos {
+  width: 5rem;
+}
+.contactos:hover {
+  transform: scale(1.1);
+}
+.contactosSegundo {
+  width: 6.5rem;
+}
+.contactosSegundo:hover {
+  transform: scale(1.1);
+}
+
+.centrarTexto {
+  text-align: center;
+  font-size: 1.2rem;
+}
+.textoFormulario {
+  color: aquamarine;
+  font-size: 1.2rem;
+}
+
+/* "---------------------------Esto es para el menu principal-----------------------------" */
+.iconNav {
+  width: 3rem;
+  height: 3rem;
+}
+
+/* "---------------Esto es para la etiqueta footer----------------" */
+
+.adaptar {
+  width: auto;
+  height: auto;
+}
