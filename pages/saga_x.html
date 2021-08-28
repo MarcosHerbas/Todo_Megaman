@@ -4,7 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="main.css" />
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/main.css" />
+    <!-- TIPOGRAFIA -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,52 +27,210 @@
     />
     <title>Bienvenidos a Todo Megaman</title>
   </head>
-  <body class="gridContent">
+  <body id="sinPad" class="container-fluid bgBody">
     <!--En esta parte esta el icono y el titulo del sitio web -->
-    <header class="gridHeader">
-      <a href="./index.html">
-        <img
-          class="logo"
-          src="./Imagenes de trabajo/Todo megaman logo.png"
-          alt="logo de la pagina"
-        />
-      </a>
-      <!--Aca esta la barra de menu-->
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li>
-            <a href="sagas.html">Sagas de Megaman</a>
-            <ul>
-              <li><a href="saga_clasica.html">Saga Clásica</a></li>
-              <li><a href="saga_x.html">Saga X</a></li>
-              <li><a href="saga_zero.html">Saga Zero</a></li>
-              <li><a href="saga_zx.html">Saga ZX</a></li>
-              <li><a href="saga_leyends.html">Saga Leyends</a></li>
-              <li>
-                <a href="saga_battle_network.html">Saga Battle Network</a>
+    <header id="sinPad" class="container-fluid">
+      <!------------------Aca esta la barra de menu-------------------->
+      <nav
+        id="parrafos"
+        class="navbar navbar-expand-lg navbar navbar-dark bg-dark"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"
+            ><img
+              class="logo"
+              src="../Imagenes de trabajo/Todo megaman logo.png"
+              alt="logo de la pagina"
+            />
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon iconNav"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../index.html"
+                  >Home</a
+                >
               </li>
-              <li><a href="saga_star_force.html">Saga Star Force</a></li>
-              <li><a href="otros.html">Spinoff y Cameos</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="sagas.html">linea temporal</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="soundtrack.html"
+                  >Soundtracks destacados</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="aporte.html">Aportar a la pagina</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Sagas
+                </a>
+                <ul
+                  id="parrafos"
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li>
+                    <a class="dropdown-item" href="saga_clasica.html"
+                      >saca clasica</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="saga_x.html">saga X</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="saga_zero.html">saga Zero</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="saga_zx.html">saga ZX</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="saga_leyends.html"
+                      >saga Leyends</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="saga_battle_network.html"
+                      >saga Battle Network</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="saga_star_force.html"
+                      >saga Star Force</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="otros.html"
+                      >Spinoff y Cameos</a
+                    >
+                  </li>
+                </ul>
+              </li>
             </ul>
-          </li>
-          <li><a href="soundtrack.html">Soundtrack destacado</a></li>
-          <li><a href="aporte.html">Aportar a la pagina</a></li>
-        </ul>
+          </div>
+        </div>
       </nav>
+      <!-- ------------------------------------------------ -->
     </header>
-    <main class="gridMain">
-      <section class="sectionContent">
-        <article class="generalGridConTitulo">
-          <h1 class="sectionContent__titulo">"Saga X"</h1>
-          <h2 class="sectionContent__subtitulo">Megaman X</h2>
-          <img
-            id="imagenL"
-            class="imagenLeft"
-            src="./Imagenes de trabajo/saga X/megaman x portada 1.jpg"
-            alt="rockman x"
-          />
-          <p class="sectionContent__parrafo">
+    <main class="container mainBg">
+      <section class="row justify-content-end">
+        <article class="row justify-content-center">
+          <h1 id="titulo">"Saga X"</h1>
+          <h2 id="subtitulo">Megaman X</h2>
+          <div class="row justify-content-center">
+            <div id="imagenM">
+              <div
+                id="carouselExampleCaptions"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      id="imagenM"
+                      src="../Imagenes de trabajo/saga x/megaman x portada 1.jpg"
+                      class="d-block"
+                      alt="rockman x"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Portada del juego</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      id="imagenM"
+                      src="../Imagenes de trabajo/saga x/megaman x menu.jpg"
+                      class="d-block"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Menú principal</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      id="imagenM"
+                      src="../Imagenes de trabajo/saga x/megaman x gameplay.jpg"
+                      class="d-block"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Imagen de Gameplay</p>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <p id="parrafos">
             En el año 21XX, 100 años despues de los hechos acontecidos en la
             saga clasica, un cientifico llamado Dr. Cain descubre un
             laboratorio. Al revisar los documentos dejados descubrio que este
@@ -112,14 +284,99 @@
           </p>
         </article>
         <article class="generalGridRight">
-          <h2 class="sectionContent__subtitulo">Megaman X2</h2>
-          <img
-            id="imagenL"
-            class="imagenRight"
-            src="./Imagenes de trabajo/saga X/megaman x2.jpg"
-            alt="rockman x2"
-          />
-          <p class="sectionContent__parrafo">
+          <h2 id="subtitulo">Megaman X2</h2>
+          <div class="row justify-content-center">
+            <div id="imagenM">
+              <div
+                id="carouselExampleCaptions2"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions2"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions2"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions2"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      id="imagenM"
+                      src="../Imagenes de trabajo/saga x/megaman x2.jpg"
+                      class="d-block"
+                      alt="rockman x2"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Portada del juego</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      id="imagenM"
+                      src="../Imagenes de trabajo/saga x/megaman x2 menu.png"
+                      class="d-block"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Menú principal</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      id="imagenM"
+                      src="../Imagenes de trabajo/saga x/megaman x2 gameplay.png"
+                      class="d-block"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Imagen de Gameplay</p>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions2"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions2"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <p id="parrafos">
             A solo 6 meses de los hechos ocurridos en la anterior entrega, X
             quien ahora lidera a los Maverick Hunter, encuentra el ultimo foco
             de la rebelión y se dirige al sitio. lo que no sabe es que esta
@@ -156,14 +413,99 @@
         </article>
 
         <article class="generalGridLeft">
-          <h2 class="sectionContent__subtitulo">Megaman X3</h2>
-          <img
-            id="imagenM"
-            class="imagenLeft"
-            src="./Imagenes de trabajo/saga X/megaman x3.jpg"
-            alt="rockman x3"
-          />
-          <p class="sectionContent__parrafo">
+          <h2 id="subtitulo">Megaman X3</h2>
+          <div class="row justify-content-center">
+            <div id="imagenM">
+              <div
+                id="carouselExampleCaptions3"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions3"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions3"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions3"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      id="imagenM"
+                      src="../Imagenes de trabajo/saga x/megaman x3.jpg"
+                      class="d-block"
+                      alt="rockman x3"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Portada del juego</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      id="imagenM"
+                      src="../Imagenes de trabajo/saga x/megaman x3 menu.png"
+                      class="d-block"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Menú principal</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      id="imagenM"
+                      src="../Imagenes de trabajo/saga x/megaman x3 gameplay.png"
+                      class="d-block"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Imagen de Gameplay</p>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions3"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions3"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <p id="parrafos">
             Los Maverick se propagan rápidamente por todo el mundo, amenazando
             la poca existencia humana restante en la Tierra. Para prevenir esto,
             un Reploid llamado Dr. Doppler ha creado un poderoso antivirus que
@@ -192,14 +534,99 @@
           </p>
         </article>
         <article class="generalGridRight">
-          <h2 class="sectionContent__subtitulo">Megaman X4</h2>
-          <img
-            id="imagenM"
-            class="imagenRight"
-            src="./Imagenes de trabajo/saga X/megaman x4.jpg"
-            alt="rockman x4"
-          />
-          <p class="sectionContent__parrafo">
+          <h2 id="subtitulo">Megaman X4</h2>
+          <div class="row justify-content-center">
+            <div id="imagenM">
+              <div
+                id="carouselExampleCaptions4"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions4"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions4"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions4"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      id="imagenM"
+                      src="../Imagenes de trabajo/saga x/megaman x4.jpg"
+                      class="d-block"
+                      alt="rockman x4"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Portada del juego</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      id="imagenM"
+                      src="../Imagenes de trabajo/saga x/megaman x4 menu.png"
+                      class="d-block"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Menú principal</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      id="imagenM"
+                      src="../Imagenes de trabajo/saga x/megaman x4 gameplay.jpg"
+                      class="d-block"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Imagen de Gameplay</p>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions4"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions4"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <p id="parrafos">
             Esta es la primera entrega en donde Zero ahora es un personaje
             jugable desde el principio. Tras la tercera derrota de Sigma, los
             laboratorios del Dr. Cain empiezan una iniciativa para crear una
@@ -260,14 +687,99 @@
         </article>
 
         <article class="generalGridLeft">
-          <h2 class="sectionContent__subtitulo">Megaman X5</h2>
-          <img
-            id="imagenS"
-            class="imagenLeft"
-            src="./Imagenes de trabajo/saga X/megaman x5.jpg"
-            alt="rockman x5"
-          />
-          <p class="sectionContent__parrafo">
+          <h2 id="subtitulo">Megaman X5</h2>
+          <div class="row justify-content-center">
+            <div id="imagenS">
+              <div
+                id="carouselExampleCaptions5"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions5"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions5"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions5"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      id="imagenS"
+                      src="../Imagenes de trabajo/saga x/megaman x5.jpg"
+                      class="d-block"
+                      alt="rockman x5"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Portada del juego</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      id="imagenS"
+                      src="../Imagenes de trabajo/saga x/megaman x5 menu.jpg"
+                      class="d-block"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Menú principal</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      id="imagenS"
+                      src="../Imagenes de trabajo/saga x/megaman x5 gameplay.jpg"
+                      class="d-block"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Imagen de Gameplay</p>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions5"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions5"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <p id="parrafos">
             En Mega Man X5, la Repliforce ha sido erradicada por completo. Con
             la paz restablecida, los Hunters reclutan varios nuevos oficiales,
             incluyendo a Alia quien funge como navegadora. Desafortunadamente,
@@ -330,14 +842,99 @@
           </p>
         </article>
         <article class="generalGridRight">
-          <h2 class="sectionContent__subtitulo">Megaman X6</h2>
-          <img
-            id="imagenM"
-            class="imagenRight"
-            src="./Imagenes de trabajo/saga X/megaman x6.jpg"
-            alt="rockman x6"
-          />
-          <p class="sectionContent__parrafo">
+          <h2 id="subtitulo">Megaman X6</h2>
+          <div class="row justify-content-center">
+            <div id="imagenM">
+              <div
+                id="carouselExampleCaptions6"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions6"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions6"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions6"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      id="imagenM"
+                      src="../Imagenes de trabajo/saga x/megaman x6.jpg"
+                      class="d-block"
+                      alt="rockman x6"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Portada del juego</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      id="imagenM"
+                      src="../Imagenes de trabajo/saga x/megaman x6 menu.jpg"
+                      class="d-block"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Menú principal</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      id="imagenM"
+                      src="../Imagenes de trabajo/saga x/megaman x6 gameplay.jpg"
+                      class="d-block"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Imagen de Gameplay</p>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions6"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions6"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <p id="parrafos">
             La historia empiza un poco retorcida ya que cambia un poco los
             hechos ocurridos en Megaman X6. La colonia Eurasia termina cayendo a
             la tierra matando a un gran numero de reploids y humanos. En la
@@ -372,14 +969,99 @@
         </article>
 
         <article class="generalGridLeft">
-          <h2 class="sectionContent__subtitulo">Megaman X7</h2>
-          <img
-            id="imagenL"
-            class="imagenLeft"
-            src="./Imagenes de trabajo/saga X/megaman x7.jpg"
-            alt="rockman x7"
-          />
-          <p class="sectionContent__parrafo">
+          <h2 id="subtitulo">Megaman X7</h2>
+          <div class="row justify-content-center">
+            <div id="imagenL">
+              <div
+                id="carouselExampleCaptions7"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions7"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions7"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions7"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      id="imagenL"
+                      src="../Imagenes de trabajo/saga x/megaman x7.jpg"
+                      class="d-block"
+                      alt="rockman x7"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Portada del juego</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      id="imagenL"
+                      src="../Imagenes de trabajo/saga x/megaman x7 menu.png"
+                      class="d-block"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Menú principal</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      id="imagenL"
+                      src="../Imagenes de trabajo/saga x/megaman x7 gameplay.jpg"
+                      class="d-block"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Imagen de Gameplay</p>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions7"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions7"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <p id="parrafos">
             Los Maverick Hunters ya no son suficientes para atrapar a todos los
             Mavericks del mundo, por lo que una nueva organización llamada "Red
             Alert", dirigida por Red, comienzan a eliminar a los Mavericks y a
@@ -433,14 +1115,99 @@
           </p>
         </article>
         <article class="generalGridRight">
-          <h2 class="sectionContent__subtitulo">Megaman X8</h2>
-          <img
-            id="imagenL"
-            class="imagenRight"
-            src="./Imagenes de trabajo/saga X/megaman x8.jpg"
-            alt="rockman x8"
-          />
-          <p class="sectionContent__parrafo">
+          <h2 id="subtitulo">Megaman X8</h2>
+          <div class="row justify-content-center">
+            <div id="imagenL">
+              <div
+                id="carouselExampleCaptions8"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions8"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions8"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions8"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      id="imagenL"
+                      src="../Imagenes de trabajo/saga x/megaman x8.jpg"
+                      class="d-block"
+                      alt="rockman x8"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Portada del juego</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      id="imagenL"
+                      src="../Imagenes de trabajo/saga x/megaman x8 menu.jpg"
+                      class="d-block"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Menú principal</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      id="imagenL"
+                      src="../Imagenes de trabajo/saga x/megaman x8 gameplay.jpg"
+                      class="d-block"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Imagen de Gameplay</p>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions8"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions8"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <p id="parrafos">
             En el 21XX, la seguridad humana se ha perdido, por lo que se ha
             implementado el proyecto del elevador orbital, el proyecto Jakob. El
             propósito de este es crear una torre gigante con el que los humanos
@@ -473,24 +1240,27 @@
       </section>
     </main>
     <!--Este seria el pie de pagina donde estan los datos de copyright y los links de facebook y twitter -->
-    <footer class="gridFooter">
-      <div class="footerFlex">
-        <div>
-          <h4 class="copyright">©Marcos Herbas</h4>
-        </div>
-        <div>
-          <a href="https://www.facebook.com/" target="_blank"
+    <footer id="sinPad" class="container-fluid bg-dark">
+      <div class="row align-items-center justify-content-between">
+        <p class="copyright col-sm-4">©Marcos Herbas</p>
+        <div class="row col-sm-8 justify-content-end align-items-center">
+          <a
+            class="adaptar col-sm-6"
+            href="https://www.facebook.com/"
+            target="_blank"
             ><img
               class="contactos"
-              src="./Imagenes de trabajo/facebook logo.png"
+              src="../Imagenes de trabajo/facebook logo.png"
               alt="link de facebook"
           /></a>
-        </div>
-        <div>
-          <a href="https://twitter.com/login" target="_blank"
+
+          <a
+            class="adaptar col-sm-6"
+            href="https://twitter.com/login"
+            target="_blank"
             ><img
               class="contactosSegundo"
-              src="./Imagenes de trabajo/twitter link.png"
+              src="../Imagenes de trabajo/twitter link.png"
               alt="link de twitter"
           /></a>
         </div>

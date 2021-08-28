@@ -43,7 +43,7 @@ body {
 #carruselColorText {
   opacity: 0.9;
   background-color: black;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: darkturquoise; }
 
 #bgFormulario {
@@ -89,11 +89,11 @@ body {
 
 .centrarTexto {
   text-align: center;
-  font-size: 1.2rem; }
+  font-size: 1.5rem; }
 
 .textoFormulario {
   color: aquamarine;
-  font-size: 1.2rem; }
+  font-size: 1.5rem; }
 
 /* "---------------------------Esto es para el menu principal-----------------------------" */
 .iconNav {
