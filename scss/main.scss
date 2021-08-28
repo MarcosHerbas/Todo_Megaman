@@ -1,3 +1,10 @@
+$fs-xs: 1.5rem;
+$fs-sm: 2rem;
+@mixin tamanios($w, $h) {
+  width: $w;
+  height: $h;
+}
+
 * {
   padding: 0em;
   margin: 0em;
@@ -16,36 +23,33 @@ body {
   border: 1px solid darkslategray;
 }
 #imagenS {
-  width: 55rem;
-  height: 28rem;
+  @include tamanios(55rem, 28rem);
 }
 #imagenM {
-  width: 52rem;
-  height: 40rem;
+  @include tamanios(52rem, 40rem);
 }
 #imagenL {
-  width: 50rem;
-  height: 50rem;
+  @include tamanios(50rem, 50rem);
 }
 #sinPad {
   padding-left: 0rem;
   padding-right: 0rem;
 }
 #parrafos {
-  font-size: 2rem;
+  font-size: $fs-sm;
 }
 #titulo {
-  font-size: 6rem;
+  font-size: ($fs-sm * 4)-2;
   text-align: center;
 }
 #subtitulo {
-  font-size: 4rem;
+  font-size: $fs-sm * 2;
   text-align: center;
 }
 #carruselColorText {
   opacity: 0.9;
   background-color: black;
-  font-size: 1.2rem;
+  font-size: $fs-xs;
   color: darkturquoise;
 }
 #bgFormulario {
@@ -56,8 +60,7 @@ body {
 
 .logo {
   border: 0.3rem solid aquamarine;
-  width: 9rem;
-  height: 9rem;
+  @include tamanios(9rem, 9rem);
 }
 .mainBg {
   background-color: blanchedalmond;
@@ -70,15 +73,14 @@ body {
 /* "------------Class solo para index.html------------" */
 
 .imagenMain {
-  width: 48rem;
-  height: 36rem;
+  @include tamanios(48rem, 36rem);
 }
 
 /* --------------------------------------- */
 
 .copyright {
   color: #f2f2f2;
-  font-size: 2rem;
+  font-size: $fs-sm;
   width: auto;
 }
 .contactos {
@@ -96,22 +98,20 @@ body {
 
 .centrarTexto {
   text-align: center;
-  font-size: 1.2rem;
+  font-size: $fs-xs;
 }
 .textoFormulario {
   color: aquamarine;
-  font-size: 1.2rem;
+  font-size: $fs-xs;
 }
 
 /* "---------------------------Esto es para el menu principal-----------------------------" */
 .iconNav {
-  width: 3rem;
-  height: 3rem;
+  @include tamanios(3rem, 3rem);
 }
 
 /* "---------------Esto es para la etiqueta footer----------------" */
 
 .adaptar {
-  width: auto;
-  height: auto;
+  @include tamanios(auto, auto);
 }
