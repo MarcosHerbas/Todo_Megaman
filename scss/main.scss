@@ -31,6 +31,9 @@ body {
 #imagenL {
   @include tamanios(50rem, 50rem);
 }
+#sinMarg {
+  margin: 0%;
+}
 #sinPad {
   padding-left: 0rem;
   padding-right: 0rem;
@@ -103,6 +106,9 @@ body {
 .textoFormulario {
   color: aquamarine;
   font-size: $fs-xs;
+}
+.sinPad {
+  padding: 0rem;
 }
 
 /* "---------------------------Esto es para el menu principal-----------------------------" */
