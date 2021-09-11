@@ -4,130 +4,413 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="main.css" />
+    <meta
+      name="description"
+      content="Este sitio web se creo con la intencion de recopilar información sobre todas las sagas de Mega Man, sobre todo las historias detras de cada entrega."
+    />
+    <meta
+      name="keywords"
+      content="Todo Megaman ,Mega Man, megaman, Mega Man wiki, Mega Man legends, Volnutt, Digger, Bonnes"
+    />
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/main.css" />
+    <!-- TIPOGRAFIA -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Tourney:wght@900&display=swap"
       rel="stylesheet"
     />
-    <title>Bienvenidos a Todo Megaman</title>
+    <title>Mega Man Legends | Todo Megaman</title>
   </head>
-  <body>
+  <body id="sinPad" class="container-fluid bgBody">
     <!--En esta parte esta el icono y el titulo del sitio web -->
-    <header>
-      <img
-        class="logo"
-        src="./Imagenes de trabajo/Todo megaman logo.png"
-        alt="logo de la pagina"
-        width="90"
-        height="90"
-      />
-      <!--Aca esta la barra de menu-->
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li>
-            <a href="sagas.html">Sagas de Megaman</a>
-            <ul>
-              <li><a href="saga_clasica.html">Saga Clásica</a></li>
-              <li><a href="saga_x.html">Saga X</a></li>
-              <li><a href="saga_zero.html">Saga Zero</a></li>
-              <li><a href="saga_zx.html">Saga ZX</a></li>
-              <li><a href="saga_leyends.html">Saga Leyends</a></li>
-              <li>
-                <a href="saga_battle_network.html">Saga Battle Network</a>
-              </li>
-              <li><a href="saga_star_force.html">Saga Star Force</a></li>
-              <li><a href="otros.html">Spinoff y Cameos</a></li>
-            </ul>
-          </li>
-          <li><a href="soundtrack.html">Soundtrack destacado</a></li>
-          <li><a href="aporte.html">Aportar a la pagina</a></li>
-        </ul>
-      </nav>
-    </header>
-    <section class="sectionContent">
-      <article class="sectionContent__separarBloques">
-        <h1 class="sectionContent__titulo">"Saga Clasica"</h1>
-        <h2 class="sectionContent__subtitulo">Megaman I</h2>
-        <img class="imagenLeft" src="./" alt="" width="400px" />
-        <p class="sectionContent__parrafo">
-          En el año 200X, los robots desarrollados para ayudar a la humanidad
-          son comunes gracias a los esfuerzos del reconocido diseñador de robots
-          Dr. Light. Sin embargo, un día estos robots se descontrolan y
-          comienzan a atacar a la población, entre ellos seis robots humanoides
-          avanzados creados por el Dr. Light con fines industriales: Cut Man,
-          Guts Man, Ice Man, Bomb Man, Fire Man y Elec Man. Se da cuenta de que
-          el culpable es su antiguo rival, el Dr. Wily (que planea conquistar el
-          mundo), pero no está seguro de qué hacer. Su robot ayudante Rock, que
-          tiene un fuerte sentido de la justicia, se ofrece a convertirse en un
-          robot de lucha para detener el plan del Dr. Wily y convertirse en
-          MegaMan. Con el tiempo, derrota a los seis robots y recupera sus
-          núcleos centrales, luego se enfrenta al Dr. Wily dentro de su fábrica
-          de robots con sede en el Pacífico (que resulta ser robots de Light que
-          producen en masa). Después de un enfrentamiento final, Wily es
-          derrotado y MegaMan regresa con su familia.
-        </p>
-      </article>
-      <article class="sectionContent__separarBloques">
-        <h2 class="sectionContent__subtitulo">Megaman II</h2>
-        <img class="imagenRight" src="./" alt="" width="400px" />
-        <p class="sectionContent__parrafo">
-          MegaMan 2 tiene lugar un año después del MegaMan original. Después de
-          su derrota inicial, el Dr. Wily, el principal antagonista de la serie,
-          crea su propio conjunto de Robot Masters en un intento de
-          contrarrestar a MegaMan: Metal Man, Air Man, Bubble Man, Quick Man,
-          Crash Man, Flash Man, Heat Man, y Wood Man. También construye una
-          nueva fortaleza y un ejército de secuaces robóticos. MegaMan es
-          enviado por su creador, el Dr. Light, para derrotar al Dr. Wily y sus
-          Robot Masters.​ MegaMan aplasta a los ocho nuevos Robot Masters y
-          luego desafía al propio Wily.​ Durante la pelea final, el Dr. Wily
-          huye a las cuevas debajo de su fortaleza y cuando MegaMan lo sigue,
-          intenta engañar a MegaMan para que piense que es un extraterrestre,
-          pero MegaMan derrota al extraterrestre revelando que es un dispositivo
-          de proyección holográfica que funciona mal mostrando al Dr. Wily a los
-          controles. Después de que el científico suplica piedad, MegaMan salva
-          a Wily y regresa a casa.
-        </p>
-      </article>
+    <header id="sinPad" class="container-fluid">
+      <!------------------Aca esta la barra de menu-------------------->
+      <nav
+        id="parrafos"
+        class="navbar navbar-expand-lg navbar navbar-dark bg-dark"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"
+            ><img
+              class="logo"
+              src="../Imagenes de trabajo/Todo megaman logo.png"
+              alt="logo de la pagina"
+            />
+          </a>
 
-      <article class="sectionContent__separarBloques">
-        <h2 class="sectionContent__subtitulo">Megaman III</h2>
-        <img class="imagenLeft" src="./" alt="" width="400px" />
-        <p class="sectionContent__parrafo">
-          Comienza explicando hechos ocurridos antes de MegaMan(juego), Dr.
-          Light crea un robot al cual llama Proto Man, el robot escapa sin dejar
-          rastro, el Dr. Light decide no quedarse en el pasado y crea a dos
-          robots, Rock y Roll. Volviendo al tiempo actual, Dr. Wily se
-          arrepiente de sus fechorías y decide trabajar con Dr. Light para crear
-          a Gamma y 8 Robots Masters para que fueran los protectores de la paz,
-          pero los Robots Masters se rebelan y escapan con unos cristales que
-          servirían de energía para Gamma, es así como MegaMan debe salir y
-          destruir los 8 Robots Masters.
-        </p>
-      </article>
-    </section>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon iconNav"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sagas.html">linea temporal</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="soundtrack.html"
+                  >Soundtracks destacados</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="aporte.html">Aportar a la pagina</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Sagas
+                </a>
+                <ul
+                  id="parrafos"
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li>
+                    <a class="dropdown-item" href="saga_clasica.html"
+                      >saca clasica</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="saga_x.html">saga X</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="saga_zero.html">saga Zero</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="saga_zx.html">saga ZX</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="saga_leyends.html"
+                      >saga Leyends</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="saga_battle_network.html"
+                      >saga Battle Network</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="saga_star_force.html"
+                      >saga Star Force</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- ------------------------------------------------ -->
+    </header>
+    <main class="container mainBg">
+      <section class="row justify-content-end">
+        <article class="row justify-content-center">
+          <h1 id="titulo">"Saga Legends"</h1>
+          <h2 id="subtitulo">Megaman Legends</h2>
+          <div class="row justify-content-center">
+            <div id="imagenM">
+              <div
+                id="carouselExampleCaptions"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      id="imagenM"
+                      src="../Imagenes de trabajo/saga legends/megaman legends portada 1.jpg"
+                      class="d-block"
+                      alt="rockman x"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Portada del juego</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      id="imagenM"
+                      src="../Imagenes de trabajo/saga legends/megaman legend menu.png"
+                      class="d-block"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Menú principal</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      id="imagenM"
+                      src="../Imagenes de trabajo/saga legends/megaman legend gameplay.jfif"
+                      class="d-block"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Imagen de Gameplay</p>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <p id="parrafos">
+            La gente se ve forzada a ganarse la vida en pequeñas porciones de
+            Tierra sobre el mar. La gente de este mundo confía en tecnología
+            antigua propulsada por Refractores Quantum, una poderosa fuente de
+            energía. Estos refractores se encuentran en ruinas, subterráneas o
+            marítimas, buscado por unos exploradores llamados "Diggers". Estos
+            valientes exploradores son la única forma de encontrar la energía de
+            los refractores, lo que los convierte en piedra angular de estas
+            civilizaciones emergentes. Originalmente, el único proposito de un
+            Digger; encontrar refractores para que la civilización perdure. Tras
+            el pasar de los años, la historia de un increible tesoro, la
+            legendaria "Veta Madre", comenzo a ser un creciente rumor entre los
+            Diggers. La Veta Madre... un grandioso tesoro por descubrir, podría
+            proveer demasiado poder tanto que el mundo nunca más se volvería a
+            quedar sin energía. En busca de la Veta Madre, los Diggers viajan de
+            una isla a otra sobre sus maquinas aéreas siempre esperando
+            encontrar lo que buscan sobre el horizonte. Mega Man Volnutt, siendo
+            Digger, busca un refractor en Ocean Ruins. Mega Man encuentra un
+            Refractor de color azul dentro de la ruina. Al obtenerlo, lo único
+            que le falta es salir de la ruina. La búsqueda de refractores no es
+            una actividad inusual para un Digger, por lo tanto, las cosas no son
+            inusuales, hasta que el Flutter presenta fallas en el motor. La
+            opción mas fiable es caer en sobre tierra y no en agua, por lo
+            tanto, Roll se ve obligada a aterrizar en la isla más cercana: la
+            Isla Kattelox.
+          </p>
+        </article>
+        <article>
+          <h2 id="subtitulo">Megaman Legends 2</h2>
+          <div class="row justify-content-center">
+            <div id="imagenM">
+              <div
+                id="carouselExampleCaptions2"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions2"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions2"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions2"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      id="imagenM"
+                      src="../Imagenes de trabajo/saga legends/megaman legends 2 portada .jpg"
+                      class="d-block"
+                      alt="rockman x2"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Portada del juego</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      id="imagenM"
+                      src="../Imagenes de trabajo/saga legends/megaman legends 2 menu.png"
+                      class="d-block"
+                      alt="rockman x2 menu"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Menú principal</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      id="imagenM"
+                      src="../Imagenes de trabajo/saga legends/megaman legends 2 gameplay.jfif"
+                      class="d-block"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Imagen de Gameplay</p>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions2"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions2"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <p id="parrafos">
+            Después de las aventuras en Kattelox Island, Barrel se encuentra en
+            una conferencia con su viejo amigo, Verner Von Bluecher por la
+            construcción del Sulphor-Bottom, la única aéronave con la que se
+            podría llegar a Forbbiden Island. Dentro de la conferencia, la
+            Familia Bonne, Glyde y Klaimoor se infiltran como asociasión para
+            conocer sobre la Veta Madre, la cual se hablaba en aquella
+            conferencia. Una extraña mujer hace unas preguntas, y Barrel se
+            percata de que ella es su hija perdida (la madre de Roll), pero
+            inmediatamente ella hulle del Shulphor-Bottom destruyendo levemente
+            a éste. Tras éso, el Shulphor Bottom cae a Forbbiden Island y Mega
+            Man y Roll se percatan de esto, por lo que intentarán entrar, pero
+            entrar a Forbbiden Island es peligroso por su constante tormenta,
+            por lo cual Roll dirije el Flutter a Calinca Island para conseguir
+            una nave de decenso. Al conseguir la nave de decenso, Mega Man
+            entrará a Forbbiden Island para rescatar a Barrel. Misteriosamente,
+            Mega Man encuentra a una misteriosa chica (Sera). Mega Man es
+            informado sobre las 4 llaves de la Veta Madre, un acceso que
+            permitirá llegar por primera vez a la Veta Madre. Pero las cosas no
+            son tan fáciles; la Familia Bonne, Klaymoor y Bola , y Glyde, han
+            hecho una tregua para ir en busca de la Veta Madre, razón por la
+            cual, Mega Man deberá darse prisa y conseguir tdas las llaves antes
+            que ellos.
+          </p>
+        </article>
+      </section>
+    </main>
     <!--Este seria el pie de pagina donde estan los datos de copyright y los links de facebook y twitter -->
-    <footer>
-      <h4 class="copyright">©Marcos Herbas</h4>
-      <a class="contactos" href="https://www.facebook.com/" target="_blank"
-        ><img
-          src="./Imagenes de trabajo/facebook link.png"
-          alt="link de facebook"
-          width="70"
-          height="40"
-      /></a>
-      <a
-        class="contactosSegundo"
-        href="https://twitter.com/login"
-        target="_blank"
-        ><img
-          src="./Imagenes de trabajo/twitter link.png"
-          alt="link de twitter"
-          width="65"
-          height="70"
-      /></a>
+    <footer id="sinPad sinMarg" class="container-fluid bg-dark">
+      <div class="row align-items-center">
+        <p class="copyright col-sm-4">©Marcos Herbas</p>
+        <div
+          id="sinPad"
+          class="row col-sm-8 justify-content-end align-items-center"
+        >
+          <a
+            id="sinPad"
+            class="adaptar"
+            href="https://www.facebook.com/"
+            target="_blank"
+            ><img
+              class="contactos"
+              src="../Imagenes de trabajo/facebook logo.png"
+              alt="link de facebook"
+          /></a>
+
+          <a
+            id="sinPad"
+            class="adaptar"
+            href="https://twitter.com/login"
+            target="_blank"
+            ><img
+              class="contactosSegundo"
+              src="../Imagenes de trabajo/twitter link.png"
+              alt="link de twitter"
+          /></a>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

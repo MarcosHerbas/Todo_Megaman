@@ -4,130 +4,909 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="main.css" />
+    <meta
+      name="description"
+      content="Mega Man Battle Network es una saga que no esta relacionada con las anteriores entregas ya que los hechos ocurridos en esta saga son parte de una reinvencion de Mega Man."
+    />
+    <meta
+      name="keywords"
+      content="Todo Megaman ,Mega Man, megaman, Mega Man wiki, Mega Man Battle Network, Lan, Hub, WWW, Mega Man EXE, Rock Man EXE"
+    />
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/main.css" />
+    <!-- TIPOGRAFIA -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Tourney:wght@900&display=swap"
       rel="stylesheet"
     />
-    <title>Bienvenidos a Todo Megaman</title>
+    <title>Mega Man Battle Network | Todo Megaman</title>
   </head>
-  <body>
+  <body id="sinPad" class="container-fluid bgBody">
     <!--En esta parte esta el icono y el titulo del sitio web -->
-    <header>
-      <img
-        class="logo"
-        src="./Imagenes de trabajo/Todo megaman logo.png"
-        alt="logo de la pagina"
-        width="90"
-        height="90"
-      />
-      <!--Aca esta la barra de menu-->
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li>
-            <a href="sagas.html">Sagas de Megaman</a>
-            <ul>
-              <li><a href="saga_clasica.html">Saga Clásica</a></li>
-              <li><a href="saga_x.html">Saga X</a></li>
-              <li><a href="saga_zero.html">Saga Zero</a></li>
-              <li><a href="saga_zx.html">Saga ZX</a></li>
-              <li><a href="saga_leyends.html">Saga Leyends</a></li>
-              <li>
-                <a href="saga_battle_network.html">Saga Battle Network</a>
-              </li>
-              <li><a href="saga_star_force.html">Saga Star Force</a></li>
-              <li><a href="otros.html">Spinoff y Cameos</a></li>
-            </ul>
-          </li>
-          <li><a href="soundtrack.html">Soundtrack destacado</a></li>
-          <li><a href="aporte.html">Aportar a la pagina</a></li>
-        </ul>
-      </nav>
-    </header>
-    <section class="sectionContent">
-      <article class="sectionContent__separarBloques">
-        <h1 class="sectionContent__titulo">"Saga Clasica"</h1>
-        <h2 class="sectionContent__subtitulo">Megaman I</h2>
-        <img class="imagenLeft" src="./" alt="" width="400px" />
-        <p class="sectionContent__parrafo">
-          En el año 200X, los robots desarrollados para ayudar a la humanidad
-          son comunes gracias a los esfuerzos del reconocido diseñador de robots
-          Dr. Light. Sin embargo, un día estos robots se descontrolan y
-          comienzan a atacar a la población, entre ellos seis robots humanoides
-          avanzados creados por el Dr. Light con fines industriales: Cut Man,
-          Guts Man, Ice Man, Bomb Man, Fire Man y Elec Man. Se da cuenta de que
-          el culpable es su antiguo rival, el Dr. Wily (que planea conquistar el
-          mundo), pero no está seguro de qué hacer. Su robot ayudante Rock, que
-          tiene un fuerte sentido de la justicia, se ofrece a convertirse en un
-          robot de lucha para detener el plan del Dr. Wily y convertirse en
-          MegaMan. Con el tiempo, derrota a los seis robots y recupera sus
-          núcleos centrales, luego se enfrenta al Dr. Wily dentro de su fábrica
-          de robots con sede en el Pacífico (que resulta ser robots de Light que
-          producen en masa). Después de un enfrentamiento final, Wily es
-          derrotado y MegaMan regresa con su familia.
-        </p>
-      </article>
-      <article class="sectionContent__separarBloques">
-        <h2 class="sectionContent__subtitulo">Megaman II</h2>
-        <img class="imagenRight" src="./" alt="" width="400px" />
-        <p class="sectionContent__parrafo">
-          MegaMan 2 tiene lugar un año después del MegaMan original. Después de
-          su derrota inicial, el Dr. Wily, el principal antagonista de la serie,
-          crea su propio conjunto de Robot Masters en un intento de
-          contrarrestar a MegaMan: Metal Man, Air Man, Bubble Man, Quick Man,
-          Crash Man, Flash Man, Heat Man, y Wood Man. También construye una
-          nueva fortaleza y un ejército de secuaces robóticos. MegaMan es
-          enviado por su creador, el Dr. Light, para derrotar al Dr. Wily y sus
-          Robot Masters.​ MegaMan aplasta a los ocho nuevos Robot Masters y
-          luego desafía al propio Wily.​ Durante la pelea final, el Dr. Wily
-          huye a las cuevas debajo de su fortaleza y cuando MegaMan lo sigue,
-          intenta engañar a MegaMan para que piense que es un extraterrestre,
-          pero MegaMan derrota al extraterrestre revelando que es un dispositivo
-          de proyección holográfica que funciona mal mostrando al Dr. Wily a los
-          controles. Después de que el científico suplica piedad, MegaMan salva
-          a Wily y regresa a casa.
-        </p>
-      </article>
+    <header id="sinPad" class="container-fluid">
+      <!------------------Aca esta la barra de menu-------------------->
+      <nav
+        id="parrafos"
+        class="navbar navbar-expand-lg navbar navbar-dark bg-dark"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"
+            ><img
+              class="logo"
+              src="../Imagenes de trabajo/Todo megaman logo.png"
+              alt="logo de la pagina"
+            />
+          </a>
 
-      <article class="sectionContent__separarBloques">
-        <h2 class="sectionContent__subtitulo">Megaman III</h2>
-        <img class="imagenLeft" src="./" alt="" width="400px" />
-        <p class="sectionContent__parrafo">
-          Comienza explicando hechos ocurridos antes de MegaMan(juego), Dr.
-          Light crea un robot al cual llama Proto Man, el robot escapa sin dejar
-          rastro, el Dr. Light decide no quedarse en el pasado y crea a dos
-          robots, Rock y Roll. Volviendo al tiempo actual, Dr. Wily se
-          arrepiente de sus fechorías y decide trabajar con Dr. Light para crear
-          a Gamma y 8 Robots Masters para que fueran los protectores de la paz,
-          pero los Robots Masters se rebelan y escapan con unos cristales que
-          servirían de energía para Gamma, es así como MegaMan debe salir y
-          destruir los 8 Robots Masters.
-        </p>
-      </article>
-    </section>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon iconNav"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sagas.html">linea temporal</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="soundtrack.html"
+                  >Soundtracks destacados</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="aporte.html">Aportar a la pagina</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Sagas
+                </a>
+                <ul
+                  id="parrafos"
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li>
+                    <a class="dropdown-item" href="saga_clasica.html"
+                      >saca clasica</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="saga_x.html">saga X</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="saga_zero.html">saga Zero</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="saga_zx.html">saga ZX</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="saga_leyends.html"
+                      >saga Leyends</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="saga_battle_network.html"
+                      >saga Battle Network</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="saga_star_force.html"
+                      >saga Star Force</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- ------------------------------------------------ -->
+    </header>
+    <main class="container mainBg">
+      <section class="row justify-content-end">
+        <article class="row justify-content-center">
+          <h1 id="titulo">"Saga Battle Network"</h1>
+          <h2 id="subtitulo">Megaman B. Network</h2>
+          <div class="row justify-content-center">
+            <div id="imagenM">
+              <div
+                id="carouselExampleCaptions"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      id="imagenM"
+                      src="../Imagenes de trabajo/saga b. network/megaman battle network portada 1.jpg"
+                      class="d-block"
+                      alt="portada"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Portada del juego</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      id="imagenM"
+                      src="../Imagenes de trabajo/saga b. network/megaman b. network menu.png"
+                      class="d-block"
+                      alt="menu"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Menú principal</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      id="imagenM"
+                      src="../Imagenes de trabajo/saga b. network/megaman b. network gameplay.png"
+                      class="d-block"
+                      alt="gameplay"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Imagen de Gameplay</p>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <p id="parrafos">
+            En el año 200X, la humanidad está en la "era de las redes". Todo el
+            mundo tiene un PET (Terminal de Exploración Personal), un
+            dispositivo todo en uno que ha sustituido a los teléfonos móviles
+            permitiendo el correo electrónico, llamadas de teléfono, calendario,
+            almacenamiento de datos, las compras y el acceso a la información.
+            Es esencial para la vida cotidiana. Muchos artículos de uso diario
+            están conectados a la red. Debido a esto, el NetCrime ha aumentado
+            debido a la explotación de las vulnerabilidades de las nuevas
+            sociedades altamente conectadas en la red, ya sea a través de la
+            piratería o el uso de virus. Uno de esos grupos NetCrime conocida
+            como WWW (World Three) es responsable de múltiples incidentes
+            NetCrime graves. Lan Hikari y MegaMan.EXE se sienten atraídos hacia
+            estos incidentes en ACDC Town, empezando por los incidentes por el
+            mal funcionamiento del horno causado por el operador WWW Mr. Match
+            en su propia casa y un ataque de Higsby en la Escuela Primaria ACDC.
+            Pero sobre todo, un ataque a WaterWorks por el Dr. Froid y la
+            posterior participación de su rival y oficial NetBattler Eugene
+            Chaud, hacen que Lan y MegaMan se enfrenten contra World Three.
+          </p>
+        </article>
+        <article>
+          <h2 id="subtitulo">Megaman B. Network 2</h2>
+          <div class="row justify-content-center">
+            <div id="imagenM">
+              <div
+                id="carouselExampleCaptions2"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions2"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions2"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions2"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      id="imagenM"
+                      src="../Imagenes de trabajo/saga b. network/megaman b. network 2 portada.png"
+                      class="d-block"
+                      alt="portada"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Portada del juego</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      id="imagenM"
+                      src="../Imagenes de trabajo/saga b. network/megaman b. network 2 menu.png"
+                      class="d-block"
+                      alt="menu"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Menú principal</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      id="imagenM"
+                      src="../Imagenes de trabajo/saga b. network/megaman b. network 2 gameplay.png"
+                      class="d-block"
+                      alt="gameplay"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Imagen de Gameplay</p>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions2"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions2"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <p id="parrafos">
+            El siguiente verano despues de la derrota de la WWW surge un nuevo
+            grupo criminal Gospel . Sus tácticas son muy diferentes en
+            comparacion con la WWW ya que no parece tener un objetivo, sino que
+            solo quieren causar el caos con sus Netnavis. Lan y MegaMan pelean
+            contra todos los miembros para prevenir las peores situaciones
+            posibles. Sin embargo descubren que el verdadero objetivo era
+            re-crear al Netnavi mas poderoso Bass.EXE (Forte.EXE en Japon)
+            usando Bug Frags, con los cuales crearian un gran ejercito de copias
+            de Bass y asi dominar el mundo. Sin embargo el metodo usado era
+            inperfecto y sus poderes eran demasiado inferiores al orginal. En un
+            intento de aumenter el poder del clon el lider de Gospel Sean
+            Obihiro lo sobrecarga pero da como resultado un organismo multi-bug
+            gigante nombrado Gospel como la organizacion, aunque su poder era
+            mucho mayor que antes Lan y Mega Man logran derrotarlo.
+          </p>
+        </article>
+
+        <article>
+          <h2 id="subtitulo">Megaman B. Network 3 (Blue/White)</h2>
+          <div class="row justify-content-center">
+            <div id="imagenM">
+              <div
+                id="carouselExampleCaptions3"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions3"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions3"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions3"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      id="imagenM"
+                      src="../Imagenes de trabajo/saga b. network/megaman b. network 3 portada.png"
+                      class="d-block"
+                      alt="portada"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Portada del juego</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      id="imagenM"
+                      src="../Imagenes de trabajo/saga b. network/megaman b. network 3 menu.png"
+                      class="d-block"
+                      alt="menu"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Menú principal</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      id="imagenM"
+                      src="../Imagenes de trabajo/saga b. network/megaman b. network 3 gameplay.png"
+                      class="d-block"
+                      alt="gameplay"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Imagen de Gameplay</p>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions3"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions3"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <p id="parrafos">
+            Meses después de que el Gospel intentara conquistar el mundo en Mega
+            Man Battle Network 2, Lan y sus amigos regresan a sus vidas
+            normales, hasta que la organización criminal World Three (WWW)
+            comenzó a emerger nuevamente. Al mismo tiempo, se estaba celebrando
+            un torneo de NetBattle llamado N1 Grand Prix, en un intento por
+            encontrar el NetBattler más fuerte en Electopia, atrayendo a
+            personas de países vecinos para que ingresen. Lan y MegaMan logran
+            pasar las rondas preliminares, solo después de numerosos ataques de
+            la WWW en un esfuerzo por obtener los TetraCodes. Una vez que Lan y
+            MegaMan entraron en el Gran Premio de N1, se descubrió que el torneo
+            era una configuración creada por WWW para anunciar su regreso al
+            mundo. Lan y sus amigos, con la ayuda de Eugene Chaud, habían
+            reconstruido el plan de la WWW después de sus ataques contra la
+            escuela ACDC y el zoológico de Yoka, ambos escondites de dos de los
+            TetraCodes: necesarios para revivir al monstruo Alpha, el prototipo
+            original de Internet, y conquistar el mundo. Como Alpha se volvió
+            loco y devoró a Navis y los programas tras su creación, los
+            científicos se vieron obligados a sellar a Alpha para evitar mayores
+            daños. Además de los TetraCodes, WWW necesitaba a Bass para
+            despertar a Alpha. Se reveló que el Dr. Wily, jefe de WWW, se estaba
+            moviendo detrás de escena en Gospel, y los había encargado de crear
+            una copia de Bass específicamente para la resurrección. Sin embargo,
+            esta vez Wily no necesitaba un Bass falso porque engañó al verdadero
+            para que eliminara la medida de seguridad final en Alpha. Cuando
+            llegaron Lan y MegaMan, Alpha se despertó y después de una batalla
+            con Bass, Alpha aparece y devora a Wily (que estaba en la red a
+            través de una transmisión de pulso) y Bass. Al ver eso, el dúo lucha
+            contra Alpha. Una vez que destruyeron a Alpha, apareció una puerta
+            que condujo a una Explosión de Visión de SciLab, donde Lan (también
+            en la Red) y MegaMan se encuentran con Tadashi Hikari, el abuelo de
+            Lan y Hub. Siendo solo datos de personalidad, solo pudo darle a Lan
+            y MegaMan una carta codificada para que se la entregaran al padre de
+            Lan, y también comentó lo bien que Lan y Hub se habían convertido en
+            grandes amigos y hermanos, antes de que la Explosión de Visión
+            dentro de Alpha se derrumbara. Antes de poder salir, Alpha captura a
+            Lan y MegaMan y comienza a devorarlos, hasta que MegaMan se
+            sacrifica para salvar a Lan. Se pensó que MegaMan había sido
+            eliminado, hasta que el padre de Lan finalmente descifró la carta de
+            su padre, que contenía los datos de respaldo de MegaMan y los datos
+            de personalidad de Tadashi Hikari.
+          </p>
+        </article>
+        <article>
+          <h2 id="subtitulo">Megaman B. Network 4 (Red Sun/Blue Moon)</h2>
+          <div class="row justify-content-center">
+            <div id="imagenM">
+              <div
+                id="carouselExampleCaptions4"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions4"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions4"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions4"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      id="imagenM"
+                      src="../Imagenes de trabajo/saga b. network/megaman b. network 4 portada.png"
+                      class="d-block"
+                      alt="portada"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Portada del juego</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      id="imagenM"
+                      src="../Imagenes de trabajo/saga b. network/megaman b. network 4 menu.png"
+                      class="d-block"
+                      alt="menu"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Menú principal</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      id="imagenM"
+                      src="../Imagenes de trabajo/saga b. network/megaman b. network 4 gameplay.png"
+                      class="d-block"
+                      alt="gameplay"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Imagen de Gameplay</p>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions4"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions4"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <p id="parrafos">
+            En la NAXA, los científicos descubren que un Asteroide va a gran
+            velocidad hacia la tierra, pero los científicos le lanzan un láser,
+            sin resultado, descubren que el asteroide tiene una Comp. por lo que
+            hacen un torneo para saber quién es el mejor operador de NetNavis y
+            enviarlo al Asteroide. Mientras con Lan y MegaMan.Exe, estos estaba
+            con su padre de compras en Elec Town. Pero entonces, un Navi extraño
+            rapta a Roll.Exe, este Navi se llama Shade Man, pero MegaMan lo
+            sigue, cuando llega a su escondite, este lucha contra él, pero
+            MegaMan.EXE no podía hacer nada contra la armadura de Shade Man,
+            pero entonces, ProtoMan.EXE aparece y ayuda a MegaMan, los dos
+            acaban con Shade Man y Roll.EXE es rescatada. Cuando MegaMan.Exe y
+            Lan se enteran de que hay un torneo, estos se inscriben, en el
+            torneo van derrotando a sus oponentes facilmentes, pero entonces,
+            uno de los robots del parque de atracciones pierde el control y
+            MegaMan.Exe entra dentro del robot, cuando llega al final se da
+            cuenta de que Shade Man era el culpable de todo, MegaMan.Exe lucha,
+            pero este seguía sin poder derrotarlo, hasta que misteriosamente, un
+            chip misterioso aparece en su inventario, MegaMan lo usa, y Shade
+            Man es derrotado facilmente, entonces se dan cuenta de que lo que
+            MegaMan ha usado era un Dark Chip. El Torneo termina, y la NAXA
+            decide que el Navi más fuerte es MegaMan.Exe. Ha si que envian a
+            MegaMan al asteroide, este, cuando llega al final del asteroide se
+            da cuenta de que Duo, un ser, esta controlando el asteroide para
+            enviarlo a la Tierra debido a que en la Tierra hay demasiada maldad,
+            pero MegaMan se dispone a luchar con el, pero Duo, extrae de MegaMan
+            todo su lado oscuro, creando así a Dark MegaMan.Exe. MegaMan lucha
+            contra su parte oscura y lo derrota, y luego, lucha con Duo.
+            MegaMan.Exe sale ganando pero cuando intenta desviar el asteroide,
+            no puede debido a que es demasiado pesado para que MegaMan.Exe lo
+            desvie el solo, pero entonces MegaMan consigue catalizar la voluntad
+            de la gente y hace mover el asteroide, y Duo promete dejar la Tierra
+            por varios cientos de años. Tras esto, el Dr. Regal, hijo del
+            Dr.Wily, y creador del sindicato Chip Oscuro, se encuentra
+            acorralado por la policía, pero este salta desde el tejado de la
+            NAXA dándose por muerto.
+          </p>
+        </article>
+        <article class="row justify-content-center">
+          <h2 id="subtitulo">
+            Megaman B. Network 5 (Team Protoman/Team Coloneal)
+          </h2>
+          <div class="row justify-content-center">
+            <div id="imagenM">
+              <div
+                id="carouselExampleCaptions5"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions5"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions5"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions5"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      id="imagenM"
+                      src="../Imagenes de trabajo/saga b. network/megaman b. network 5 portada.png"
+                      class="d-block"
+                      alt="portada"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Portada del juego</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      id="imagenM"
+                      src="../Imagenes de trabajo/saga b. network/megaman b. network 5 menu.png"
+                      class="d-block"
+                      alt="menu"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Menú principal</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      id="imagenM"
+                      src="../Imagenes de trabajo/saga b. network/megaman b. network 5 gameplay.png"
+                      class="d-block"
+                      alt="gameplay"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Imagen de Gameplay</p>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions5"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions5"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <p id="parrafos">
+            Ha pasado un mes desde la batalla con Nebula, el Dark Chip
+            Syndicate, una batalla por el destino de la tierra misma. Hoy Lan y
+            sus amigos están visitando a Yuichiro Hikari en SciLab. El padre de
+            Lan tiene noticias emocionantes. Justo antes de que el Dr. Hikari
+            comparta su gran noticia, un misterioso grupo de Navis aparece de la
+            nada y se hace cargo de Internet. ¡Incluso las propias computadoras
+            del laboratorio están pirateadas y todos los sistemas se apagan! En
+            medio del caos, de repente un gas somnífero es arrojado al
+            laboratorio. Una persona tras otra cae al suelo, incluido el padre
+            de Lan. Afortunadamente, Lan permanece fuera de la vista cuando se
+            apaga el gas dormido, y se las arregla para mantener la conciencia
+            por un tiempo más. Acostado en un estado atontado, Lan ve al Dr.
+            Regal, líder de Nebula, elevándose sobre los cuerpos inconscientes.
+            ¡Entonces Regal está vivo después de todo! Por esto mismo, el padre
+            de Lan es secuestrado y los navis de sus amigos también.
+          </p>
+        </article>
+
+        <article class="row justify-content-center">
+          <h2 id="subtitulo">
+            Megaman B. Network 6 (Cybeast Gregar/Cybeast Falzar)
+          </h2>
+          <div class="row justify-content-center">
+            <div id="imagenM">
+              <div
+                id="carouselExampleCaptions6"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions6"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions6"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions6"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      id="imagenM"
+                      src="../Imagenes de trabajo/saga b. network/megaman b. network 6 portada.png"
+                      class="d-block"
+                      alt="portada"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Portada del juego</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      id="imagenM"
+                      src="../Imagenes de trabajo/saga b. network/megaman b. network 6 menu.png"
+                      class="d-block"
+                      alt="menu"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Menú principal</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      id="imagenM"
+                      src="../Imagenes de trabajo/saga b. network/megaman b. network 6 gameplay.png"
+                      class="d-block"
+                      alt="gameplay"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Imagen de Gameplay</p>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions6"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions6"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <p id="parrafos">
+            La historia comienza cuando Lan está en clases en su pueblo natal
+            ACDC, en eso la señorita Mari anuncia que un alumno se va a mover de
+            escuela y de pueblo. Ese alumno resulta ser Lan, y la razón de esta
+            mudanza es que su padre, Yuichiro Hikari, ha recibido una oferta de
+            trabajo en otro lugar y éste aceptó, mudándose de ACDC Town a
+            Central Town. En este lugar, después de que Lan desempacara y
+            conozca su nuevo hogar, decide ir conocer al pueblo. En esto es
+            donde rescata a una niña de nombre desconocido de un PerroBot que
+            está infectado por un virus. Luego de aquello asiste a la escuela,
+            donde conoce a un niño algo rebelde de nombre Mick, con el cual al
+            principio no se lleva muy bien, y otro llamado Aster, que es dueño
+            de una tienda de Chips como Higsby. Tras esto, Lan y MegaMan deciden
+            navegar por la nueva net/internet y entonces es cuando conocen una
+            leyenda de Central Town que se le conoce como Cybeast, y según la
+            leyenda eran 2 bestias que lucharon hasta la muerte una contra la
+            otra, pero al final fueron selladas en un lugar desconocido; pero
+            una organización criminal se propone descubrir ese lugar, para
+            liberarlas y usarlas para sus propósitos. Mientras Lan y Megaman
+            hacían eso, Megaman decidió absorber los poderes de las bestias,
+            pero por un desafortunado accidente, Iris le envía un mail a Lan y
+            le dice que puede curar a Megaman con una Healwater. Cuando termina
+            esto, Megaman usa sus poderes y sigue luchando contra la WWW. Al
+            final tendrá que luchar contra las 2 bestias. Luego de vencer las 2
+            bestias, Lan volvió a ACDC junto con sus amigos, hablan acerca de lo
+            que harán en el futuro y prometieron que cumplirían sus sueños. Y
+            así fue. Chaud rige a oficiales mundiales, Mick es un profesor, Tab
+            es el dueño de una tienda de Battle Chips, Dex es el alcalde de
+            ACDC, Yai se convirtió en la presidenta del negocio de su padre y
+            Lan se casó con Mayl, tuvieron un hijo llamado Patch y continuó el
+            negocio de su padre.
+          </p>
+        </article>
+      </section>
+    </main>
     <!--Este seria el pie de pagina donde estan los datos de copyright y los links de facebook y twitter -->
-    <footer>
-      <h4 class="copyright">©Marcos Herbas</h4>
-      <a class="contactos" href="https://www.facebook.com/" target="_blank"
-        ><img
-          src="./Imagenes de trabajo/facebook link.png"
-          alt="link de facebook"
-          width="70"
-          height="40"
-      /></a>
-      <a
-        class="contactosSegundo"
-        href="https://twitter.com/login"
-        target="_blank"
-        ><img
-          src="./Imagenes de trabajo/twitter link.png"
-          alt="link de twitter"
-          width="65"
-          height="70"
-      /></a>
+    <footer id="sinPad sinMarg" class="container-fluid bg-dark">
+      <div class="row align-items-center">
+        <p class="copyright col-sm-4">©Marcos Herbas</p>
+        <div
+          id="sinPad"
+          class="row col-sm-8 justify-content-end align-items-center"
+        >
+          <a
+            id="sinPad"
+            class="adaptar"
+            href="https://www.facebook.com/"
+            target="_blank"
+            ><img
+              class="contactos"
+              src="../Imagenes de trabajo/facebook logo.png"
+              alt="link de facebook"
+          /></a>
+
+          <a
+            id="sinPad"
+            class="adaptar"
+            href="https://twitter.com/login"
+            target="_blank"
+            ><img
+              class="contactosSegundo"
+              src="../Imagenes de trabajo/twitter link.png"
+              alt="link de twitter"
+          /></a>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
