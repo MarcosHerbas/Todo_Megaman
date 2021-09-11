@@ -4,130 +4,562 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="main.css" />
+    <meta
+      name="description"
+      content="Hablaremos sobre los hechos ocurridos mucho tiempo despues de la saga Zero y teniendo a varios protagonistas."
+    />
+    <meta
+      name="keywords"
+      content="Todo Megaman ,Mega Man, megaman, Mega Man wiki, Mega Man ZX, Aile, Vent, Gray, Ashe, Biometales, Modelo X, Modelo Z, Modelo A, Modelo W, Modelo ZX, Mega Man ZX Advent"
+    />
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/main.css" />
+    <!-- TIPOGRAFIA -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Tourney:wght@900&display=swap"
       rel="stylesheet"
     />
-    <title>Bienvenidos a Todo Megaman</title>
+    <title>Mega Man ZX | Todo Megaman</title>
   </head>
-  <body>
+  <body id="sinPad" class="container-fluid bgBody">
     <!--En esta parte esta el icono y el titulo del sitio web -->
-    <header>
-      <img
-        class="logo"
-        src="./Imagenes de trabajo/Todo megaman logo.png"
-        alt="logo de la pagina"
-        width="90"
-        height="90"
-      />
-      <!--Aca esta la barra de menu-->
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li>
-            <a href="sagas.html">Sagas de Megaman</a>
-            <ul>
-              <li><a href="saga_clasica.html">Saga Clásica</a></li>
-              <li><a href="saga_x.html">Saga X</a></li>
-              <li><a href="saga_zero.html">Saga Zero</a></li>
-              <li><a href="saga_zx.html">Saga ZX</a></li>
-              <li><a href="saga_leyends.html">Saga Leyends</a></li>
-              <li>
-                <a href="saga_battle_network.html">Saga Battle Network</a>
-              </li>
-              <li><a href="saga_star_force.html">Saga Star Force</a></li>
-              <li><a href="otros.html">Spinoff y Cameos</a></li>
-            </ul>
-          </li>
-          <li><a href="soundtrack.html">Soundtrack destacado</a></li>
-          <li><a href="aporte.html">Aportar a la pagina</a></li>
-        </ul>
-      </nav>
-    </header>
-    <section class="sectionContent">
-      <article class="sectionContent__separarBloques">
-        <h1 class="sectionContent__titulo">"Saga Clasica"</h1>
-        <h2 class="sectionContent__subtitulo">Megaman I</h2>
-        <img class="imagenLeft" src="./" alt="" width="400px" />
-        <p class="sectionContent__parrafo">
-          En el año 200X, los robots desarrollados para ayudar a la humanidad
-          son comunes gracias a los esfuerzos del reconocido diseñador de robots
-          Dr. Light. Sin embargo, un día estos robots se descontrolan y
-          comienzan a atacar a la población, entre ellos seis robots humanoides
-          avanzados creados por el Dr. Light con fines industriales: Cut Man,
-          Guts Man, Ice Man, Bomb Man, Fire Man y Elec Man. Se da cuenta de que
-          el culpable es su antiguo rival, el Dr. Wily (que planea conquistar el
-          mundo), pero no está seguro de qué hacer. Su robot ayudante Rock, que
-          tiene un fuerte sentido de la justicia, se ofrece a convertirse en un
-          robot de lucha para detener el plan del Dr. Wily y convertirse en
-          MegaMan. Con el tiempo, derrota a los seis robots y recupera sus
-          núcleos centrales, luego se enfrenta al Dr. Wily dentro de su fábrica
-          de robots con sede en el Pacífico (que resulta ser robots de Light que
-          producen en masa). Después de un enfrentamiento final, Wily es
-          derrotado y MegaMan regresa con su familia.
-        </p>
-      </article>
-      <article class="sectionContent__separarBloques">
-        <h2 class="sectionContent__subtitulo">Megaman II</h2>
-        <img class="imagenRight" src="./" alt="" width="400px" />
-        <p class="sectionContent__parrafo">
-          MegaMan 2 tiene lugar un año después del MegaMan original. Después de
-          su derrota inicial, el Dr. Wily, el principal antagonista de la serie,
-          crea su propio conjunto de Robot Masters en un intento de
-          contrarrestar a MegaMan: Metal Man, Air Man, Bubble Man, Quick Man,
-          Crash Man, Flash Man, Heat Man, y Wood Man. También construye una
-          nueva fortaleza y un ejército de secuaces robóticos. MegaMan es
-          enviado por su creador, el Dr. Light, para derrotar al Dr. Wily y sus
-          Robot Masters.​ MegaMan aplasta a los ocho nuevos Robot Masters y
-          luego desafía al propio Wily.​ Durante la pelea final, el Dr. Wily
-          huye a las cuevas debajo de su fortaleza y cuando MegaMan lo sigue,
-          intenta engañar a MegaMan para que piense que es un extraterrestre,
-          pero MegaMan derrota al extraterrestre revelando que es un dispositivo
-          de proyección holográfica que funciona mal mostrando al Dr. Wily a los
-          controles. Después de que el científico suplica piedad, MegaMan salva
-          a Wily y regresa a casa.
-        </p>
-      </article>
+    <header id="sinPad" class="container-fluid">
+      <!------------------Aca esta la barra de menu-------------------->
+      <nav
+        id="parrafos"
+        class="navbar navbar-expand-lg navbar navbar-dark bg-dark"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"
+            ><img
+              class="logo"
+              src="../Imagenes de trabajo/Todo megaman logo.png"
+              alt="logo de la pagina"
+            />
+          </a>
 
-      <article class="sectionContent__separarBloques">
-        <h2 class="sectionContent__subtitulo">Megaman III</h2>
-        <img class="imagenLeft" src="./" alt="" width="400px" />
-        <p class="sectionContent__parrafo">
-          Comienza explicando hechos ocurridos antes de MegaMan(juego), Dr.
-          Light crea un robot al cual llama Proto Man, el robot escapa sin dejar
-          rastro, el Dr. Light decide no quedarse en el pasado y crea a dos
-          robots, Rock y Roll. Volviendo al tiempo actual, Dr. Wily se
-          arrepiente de sus fechorías y decide trabajar con Dr. Light para crear
-          a Gamma y 8 Robots Masters para que fueran los protectores de la paz,
-          pero los Robots Masters se rebelan y escapan con unos cristales que
-          servirían de energía para Gamma, es así como MegaMan debe salir y
-          destruir los 8 Robots Masters.
-        </p>
-      </article>
-    </section>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon iconNav"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sagas.html">linea temporal</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="soundtrack.html"
+                  >Soundtracks destacados</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="aporte.html">Aportar a la pagina</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Sagas
+                </a>
+                <ul
+                  id="parrafos"
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li>
+                    <a class="dropdown-item" href="saga_clasica.html"
+                      >saca clasica</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="saga_x.html">saga X</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="saga_zero.html">saga Zero</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="saga_zx.html">saga ZX</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="saga_leyends.html"
+                      >saga Leyends</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="saga_battle_network.html"
+                      >saga Battle Network</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="saga_star_force.html"
+                      >saga Star Force</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- ------------------------------------------------ -->
+    </header>
+    <main class="container mainBg">
+      <section class="row justify-content-end">
+        <article class="row justify-content-center">
+          <h1 id="titulo">"Saga ZX"</h1>
+          <h2 id="subtitulo">Megaman ZX</h2>
+          <div class="row justify-content-center">
+            <div id="imagenM">
+              <div
+                id="carouselExampleCaptions"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      id="imagenM"
+                      src="../Imagenes de trabajo/saga zx/megaman zx portada1.jpg"
+                      class="d-block"
+                      alt="rockman x"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Portada del juego</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      id="imagenM"
+                      src="../Imagenes de trabajo/saga zx/megaman zx menu.png"
+                      class="d-block"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Menú principal</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      id="imagenM"
+                      src="../Imagenes de trabajo/saga zx/megaman zx gameplay.jpg"
+                      class="d-block"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Imagen de Gameplay</p>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <p id="parrafos">
+            El juego tiene lugar aproximadamente 200 años después del final de
+            la saga de Mega Man Zero. Las guerras han quedado muy atrás y los
+            humanos y reploids ahora coexisten pacíficamente. Con el tiempo, los
+            Humanoides de la Tierra (quienes una vez fueron humanos y Reploids)
+            han logrado revivir algunas de las antiguas naciones del planeta.
+            Sin embargo, la prosperidad de antaño pronto se ve perturbada cuando
+            algunas de las formas de vida mecánicas comienzan a volverse
+            Mavericks, haciendo que algunas áreas se vuelvan peligrosas, y
+            pronto esta actividad comienza a obstruir el intercambio entre las
+            naciones. Las naciones comienzan a ser divididas en áreas designadas
+            como Innerpeace, ciudades utópicas en las cuales los Humanoides
+            pueden vivir tranquilamente, y las Outlands, donde los Mavericks,
+            Reploids y Mechaniloids que amenanzan la paz. Gracias a los
+            esfuerzos de la compañía Slither Inc. se han logrado grandes
+            progresos. Slither Inc. ha logrado extraer tecnologías antiguas de
+            ruinas en las Outlands. La vida tranquila en Innerpeace se mantiene
+            gracias a la tecnología ofrecida por Slither Inc. En las regiones de
+            la frontera, donde la crisis de los países aún no se ha podido
+            resolver, los Mavericks aun continúan causando estragos. Los
+            Humanoides de estas áreas crearon una organización para defensa
+            conocida como los Guardianes. Los Guardianes defienden las Outlands
+            e investigan la causa de los ataques Maverick. La líder original de
+            los Guardianes desapareció durante la investigación en las área
+            Exteriores. Diez años antes de los eventos del juego, el
+            protagonista (que puede ser Vent o Aile, dependiendo de la elección
+            del jugador) perdió a sus padres durante un ataque Disidente en el
+            parque de diversiones del Área H y quedó huérfano. Girouette (o Giro
+            para abreviar), el dueño de Giro Express, un servicio de transporte
+            que lleva "cualquier cosa a cualquier lugar", lo/la tomó bajo su
+            custodia y ahora trabaja para él en su negocio. Un día, Giro es
+            contratado por un cliente desconocido para llevar un paquete muy
+            importante a un punto de reunión en el Área A. De camino, Vent/Aile
+            recuerda el incidente Maverick que le costó la vida de sus padres.
+            Justo cuando están por retomar el camino, un grupo de Mavericks los
+            atacan. Vent/Aile cae a un bosque, junto con el paquete que
+            llevaban. Aquí, se encuentran con Prairie y los Guardianes. Su
+            encuentro es interrumpido cuando un Mecaniloid con forma de
+            serpiente, Giga Aspis, los ataca. El paquete, un artefacto flotante
+            que se hace llamar Biometal Modelo X (referente a X), le da su poder
+            a Vent/Aile, transformándolo/a en Mega Man Model X. Con la ayuda de
+            Model X, Giga Aspis es destruido. Por órdenes de Prairie, se le
+            permite quedarse con Model X y sale en busca de Giro. Al llegar al
+            Área B, Vent/Aile es atacado/a por un aeroplano piloteado por
+            Mavericks, Rayfly, pero Giro, en la forma de Mega Man Modelo Z
+            (correspondiente a Zero), llega y acaba con él. Más adelante, a
+            bordo del Cuartel General de los Guardianes (una aeronave), Prairie
+            le revela que es la comandante de los Guardianes y comienza a
+            explicarle la situación. Sin embargo, suena la alarma cuando se
+            detecta un ataque Maverick en el distrito residencial cerca del Área
+            D. Vent/Aile sale corriendo a tratar de ayudar, a pesar de las
+            advertencias de Giro de que puede ser una trampa. Viendo que no
+            puede detenerlo/a, Giro va tras ellos. Al llegar a la oficina
+            principal de Slither Inc., donde se enfrentan cara a cara con el
+            presidente de Slither Inc., Serpent, y los que se hacen llamar "las
+            voces de Modelo W", Prometheus y Pandora. Serpent revela su
+            conocimiento del Biometal y dice que él también es un Mega Man y que
+            posee un fragmento del Modelo W. Sin embargo, dice que planea
+            encontrar el núcleo del Modelo W y despertarlo, y se va, pero no sin
+            antes posesionar al debilitado Giro con el poder del Modelo W,
+            logran derrotar a giro pero este termina muriendo. Al final de la
+            historia Vent/Aile finalmente se dirige a la oficina central de
+            Slither Inc. para evitar que Serpent despierte al núcleo del Modelo
+            W (Dr. Weil). En el camino, ve que el lugar está lleno de cápsulas
+            con Cyber-Elves. Finalmente llega con Serpent, quien le explica que
+            el Modelo W se alimenta del miedo que sufren las víctimas que ha
+            sacrificado para convertirlas en Cyber-Elves. Serpent se transforma
+            con su fragmento en Mega Man Modelo W y se enfrenta a Vent/Aile.
+            Durante la pelea, Serpent se ríe sin ninguna razón aparente, y
+            cuando Aile/Vent le pregunta por qué, este responde que é/ella eran
+            la llave final: en ese momento, él/ella está lleno de odio y furia
+            contra Serpent por todo lo que le ha arrebatado, y con eso consigue
+            despertar el núcleo del Modelo W y sin perder un instante Serpent se
+            fusiona con él. Vent/Aile no puede creer que todo lo que han hecho
+            hasta ahora haya resultado en vano, pero entonces, los Biometals le
+            devuelven su voluntad al decirle que su verdadero poder no surge del
+            odio, sino de su valentía y su deseo de proteger a los demás. Con un
+            valor renovado, Vent/Aile consigue finalmente derrotar de una vez
+            por todas a Serpent, pero este antes de derrumbarse le mete una
+            última duda: al querer detener el progreso, están interfiriendo con
+            el curso natural de la vida. El edificio comienza a derrumbarse,
+            pero los Biometales lo/a sacan de ahí justo a tiempo.
+          </p>
+        </article>
+        <article>
+          <h2 id="subtitulo">Megaman ZX Advent</h2>
+          <div class="row justify-content-center">
+            <div id="imagenM">
+              <div
+                id="carouselExampleCaptions2"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions2"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions2"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions2"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      id="imagenM"
+                      src="../Imagenes de trabajo/saga zx/megaman zx advent.jpg"
+                      class="d-block"
+                      alt="rockman x2"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Portada del juego</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      id="imagenM"
+                      src="../Imagenes de trabajo/saga zx/megaman zx advent menu.jpg"
+                      class="d-block"
+                      alt="rockman x2 menu"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Menú principal</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      id="imagenM"
+                      src="../Imagenes de trabajo/saga zx/megaman zx advent gameplay.jpg"
+                      class="d-block"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p id="carruselColorText">Imagen de Gameplay</p>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions2"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions2"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <p id="parrafos">
+            El Gobierno de la Federación, Legión, se estableció como una
+            organización que ayuda a eliminar las distinciones entre humanos y
+            Reploides dándole a los humanos implantes cibernéticos y dándole a
+            los Reploides períodos de vida artificiales. Desde entonces, las dos
+            poblaciones cooperan como una sola alrededor del mundo. Sin embargo,
+            máquinas feroces conocidas como Mavericks aún existen en áreas no
+            seguras, y desafortunadamente mucha de la tecnología más poderosa
+            del mundo se ha perdido en las ruinas de dichas áreas. Varias
+            personas formaron la banda de los Hunters para buscar y desenterrar
+            las cosas de valor en esas ruinas. Mientras tanto, aquellos que no
+            querían unirse a los Hunters y conseguir los tesoros por su propia
+            cuenta fueron denominados Raiders, y a menudo ambos bandos se
+            enfrentan entre sí a causa de querer obtener los tesoros. Igual que
+            su predecesor, Advent le permite al jugador descubrir la historia
+            desde la perspectiva de dos personajes. Igual que los dos
+            protagonistas del primer ZX, los dos héroes existen
+            concurrentemente, pero cual de los dos se embarca en la aventura lo
+            decide el jugador. Grey es un niño Reploide que se encontraba en
+            animación suspendida dentro de una cápsula en un laboratorio.
+            Accidentalmente es despertado por unos Hunters y luego es atacado
+            por Pandora quien dice que está "defectuoso." Al escapar de ella,
+            Grey se une a los Hunters con la esperanza de descubrir la verdad
+            sobre su identidad y su pasado. Por su parte, Ashe es una joven
+            humana y una de los miembros más hábiles de los Hunters. Durante un
+            ataque a una nave de Raiders, se enfrentó a Prometheus, y fue dejada
+            inconsciente. A salvo en el campamento de los Hunters, Grey y Ashe
+            son asignados para proteger un poderoso Biometal de los Raiders
+            mientras se lo transporta a los cuarteles generales de Legión. El
+            Biometal es conocido como Modelo A, el único biometal que no esta
+            basado en un personaje de MegaMan Zero, sino que se basa en Axl
+            (aunque se averigüe más tarde que fue creado por Master Albert), y
+            cuando un grupo de Mavericks, liderados por Prometheus y Pandora
+            atacan el tren de carga que lleva el Biometal, este se fusiona con
+            ellos. Modelo A es muy valioso por su habilidad llamada A-Trans, que
+            le permite imitar la forma y habilidades de otras formas de vida
+            como Mavericks y Biometals (esto se asemeja a la habilidad de Axl de
+            copiar las habilidades de cualquier forma de vida). Al obtener este
+            poder, Grey y Ashe son enlistados por los Tres Sabios, (también
+            llamado la sabia trinidad): Master Thomas, Master Albert y Master
+            Mikhail para detener los ataques Maverick e investigar el misterio
+            detrás del Modelo W. Por el camino, Grey y Ashe se topan
+            continuamente con Pandora y Prometheus, al igual que con cuatro Mega
+            Men que usan cuatro de los Biometals del primer ZX. Ellos son:
+            Aeolus quien porta el Modelo H, Atlas quien porta el Modelo F,
+            Thetis quien porta el Modelo L y Siarnaq quien porta el Modelo P.
+            Todos ellos están involucrados en una enorme trama llamada "El Juego
+            del Destino" el cual supuestamente determinará quién gobernará al
+            mundo. En los cuarteles de Legión, Grey y Ashe descubren que Albert
+            es quien está detrás de todo, incluyendo el "Juego del Destino", ya
+            que planea acabar con el mundo como lo conocemos e iniciar uno
+            nuevo, y más aún, él parece saber mucho acerca del pasado de
+            nuestros protagonistas. A lo largo de la historia, conforme el
+            Modelo A copia la data de los otros Biometals, comienza a hacerse
+            más y más claro cuál es la verdadera razón de su creación y quién lo
+            hizo. Cuando un ataque Maverick comienza a aproximarse al campamento
+            de los Hunters, Grey y Ashe van a investigar, con la esperanza de
+            obtener un fragmento del Model W para analizarlo y saber como
+            destruirlo. Sorprendentemente, por el camino descubren que gran
+            parte de los Mavericks han sido destruidos, y se preguntan quién
+            pudo haberlo hecho, después de todo nadie que siguiera a Albert
+            tendría que molestarse en acabar a los Mavericks. Finalmente, al
+            llegar con el Modelo W, descubren a Vent y Aile a quienes se
+            enfrentan a causa de un malentendido. Tras el combate, Vent y Aile
+            explican que en realidad ellos buscaban los Modelo W no para
+            usarlos, sino para destruirlos, y unen fuerzas con Grey y Ashe ya
+            que comparten la misma meta. En un último enfrentamiento, Pandora y
+            Prometheus, quienes aparentemente seguían a Albert, les revelan a
+            nuestros héroes que en realidad estaban planeando terminar con él
+            desde hacía mucho tiempo, ya que los mantenía bajo su control al
+            darles períodos de vida limitados y forzándolos a ir a cápsulas de
+            mantenimiento para mantenerse con vida. Sin embargo, cuando creen
+            que lo han logrado, el Modelo W absorbe todo el odio que llevaban
+            dentro, aparentemente matándolos en el proceso. Albert combina todos
+            los fragmentos del Modelo W para formar el Biometal supremo,
+            Ouroboros, el cual se eleva hacia el cielo y comienza a causar
+            estragos. De regreso en el campamento de los Hunters, Grey y Ashe se
+            encuentran nuevamente con Vent y Aile, quienes les revelan su plan:
+            usar la Base de los Guardianes para abordar Ouroboros y acabar con
+            Albert de una vez por todas. Con ayuda de algunos Hunters, y tras
+            recibir una autorización oficial de parte de Master Thomas, se
+            dirigen a atacar Ouroboros. Casi llegando hasta donde se encuentra
+            Albert, son detenidos por Aeolus, Atlas, Thetis y Siarnaq. Grey y
+            Ashe intentan razonar con ellos, diciéndoles que Albert simplemente
+            los está utilizando, pero es inútil. Vent y Aile aparecen para
+            ayudarles, diciéndoles que sigan adelante y acaben con Albert,
+            mientras se enfrentan a ellos para recuperar los Biometales robados.
+            Grey y Ashe se enfrentan a Albert, quien revela tener la misma
+            habilidad A-Trans del Modelo A, pero los desafía a que lleguen hasta
+            él para revelarles la verdad. Grey y Ashe finalmente lo logran, y
+            descubren la verdad: Model A era una copia de seguridad de sus
+            habilidades que Albert había creado para futuro uso, y además,
+            resulta ser que Grey y Ashe contienen su información genética (Grey
+            fue creado para usarse como cuerpo de emergencia para Albert, y Ashe
+            es una descendiente lejana de la familia que Albert abandonó tras
+            convertirse en uno de los tres sabios). Pero a estas alturas, poco
+            les importa su relación con Albert, y finalmente tras un esfuerzo
+            supremo logran derrotarlo, diciéndole que no permitirán que él
+            decida su destino, ni el del mundo. Tras la muerte de Albert,
+            Ouroboros comienza a caer, pero exhaustos por la pelea, Grey y Ashe
+            colapsan y no logran escapar. Mientras tanto, Vent y Aile continúan
+            enfrentándose a los cuatro "Elegidos", pero en cuanto la fortaleza
+            comienza a caer, Modelo Z se queda atrás para contenerlos, mientras
+            Vent y Aile van con Modelo X a rescatar a Grey y Ashe. Grey y Ashe
+            despiertan en el campamento de los Hunters, y al salir son recibidos
+            por Vent y Aile. Ouroboros cayó en pedazos hacia el mar, y ya no hay
+            rastro del Modelo W en ninguna parte. Tras darse las gracias por su
+            apoyo, Grey y Ashe se despiden de Vent y Aile, prometiendo volver a
+            verse algún día. Sin embargo, Thomas parece querer continuar con la
+            labor de Albert... y los cuatro elegidos enemigos sobrevivieron a la
+            caída de Ouroboros y parecen estar de su lado. Cuando están solos
+            Thomas y Mikhail, Thomas le explica que él no está de acuerdo con
+            Albert excepto en una cosa, ahí es cuando llegan los 4 elegidos y le
+            dijo "Este mundo tiene que reiniciarse". Según parece, las cosas aún
+            no han terminado...
+          </p>
+        </article>
+      </section>
+    </main>
     <!--Este seria el pie de pagina donde estan los datos de copyright y los links de facebook y twitter -->
-    <footer>
-      <h4 class="copyright">©Marcos Herbas</h4>
-      <a class="contactos" href="https://www.facebook.com/" target="_blank"
-        ><img
-          src="./Imagenes de trabajo/facebook link.png"
-          alt="link de facebook"
-          width="70"
-          height="40"
-      /></a>
-      <a
-        class="contactosSegundo"
-        href="https://twitter.com/login"
-        target="_blank"
-        ><img
-          src="./Imagenes de trabajo/twitter link.png"
-          alt="link de twitter"
-          width="65"
-          height="70"
-      /></a>
+    <footer id="sinPad sinMarg" class="container-fluid bg-dark">
+      <div class="row align-items-center">
+        <p class="copyright col-sm-4">©Marcos Herbas</p>
+        <div
+          id="sinPad"
+          class="row col-sm-8 justify-content-end align-items-center"
+        >
+          <a
+            id="sinPad"
+            class="adaptar"
+            href="https://www.facebook.com/"
+            target="_blank"
+            ><img
+              class="contactos"
+              src="../Imagenes de trabajo/facebook logo.png"
+              alt="link de facebook"
+          /></a>
+
+          <a
+            id="sinPad"
+            class="adaptar"
+            href="https://twitter.com/login"
+            target="_blank"
+            ><img
+              class="contactosSegundo"
+              src="../Imagenes de trabajo/twitter link.png"
+              alt="link de twitter"
+          /></a>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
