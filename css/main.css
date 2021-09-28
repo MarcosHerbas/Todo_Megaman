@@ -25,6 +25,9 @@ body {
   width: 50rem;
   height: 50rem; }
 
+#sinMarg {
+  margin: 0%; }
+
 #sinPad {
   padding-left: 0rem;
   padding-right: 0rem; }
@@ -71,9 +74,8 @@ body {
 
 /* --------------------------------------- */
 .copyright {
-  color: #f2f2f2;
-  font-size: 2rem;
-  width: auto; }
+  width: 20rem;
+  height: 8rem; }
 
 .contactos {
   width: 5rem; }
@@ -95,10 +97,63 @@ body {
   color: aquamarine;
   font-size: 1.5rem; }
 
+.sinPad {
+  padding: 0rem; }
+
+.reproductor {
+  font-size: 10px;
+  color: #cccccc;
+  line-break: anywhere;
+  word-break: normal;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-family: Interstate, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
+  font-weight: 100; }
+
+.soundcloudLink {
+  color: #fa0303;
+  text-decoration: none; }
+
 /* "---------------------------Esto es para el menu principal-----------------------------" */
 .iconNav {
   width: 3rem;
   height: 3rem; }
+
+/* "---------------Esto es para el boton Back to top----------------" */
+#scroll {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  background-color: #3498db;
+  text-indent: -9999px;
+  display: none;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  border-radius: 60px; }
+
+#scroll span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -8px;
+  margin-top: -12px;
+  height: 0;
+  width: 0;
+  border: 8px solid transparent;
+  border-bottom-color: #ffffff; }
+
+#scroll:hover {
+  background-color: #e74c3c;
+  opacity: 1;
+  filter: "alpha(opacity=100)";
+  -ms-filter: "alpha(opacity=100)"; }
+
+.botton-btt {
+  display: none; }
 
 /* "---------------Esto es para la etiqueta footer----------------" */
 .adaptar {

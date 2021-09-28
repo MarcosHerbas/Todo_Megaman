@@ -24,6 +24,10 @@
       integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
       crossorigin="anonymous"
     ></script>
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- JS -->
+    <script src="../js/java.js"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="../css/main.css" />
     <!-- TIPOGRAFIA -->
@@ -36,6 +40,14 @@
     <title>Mega Man X | Todo Megaman</title>
   </head>
   <body id="sinPad" class="container-fluid bgBody">
+    <!-- Botton Back To Top -->
+    <a
+      href="javascript:void(0);"
+      id="scroll"
+      title="Volver al comienzo"
+      class="botton-btt"
+      >Top<span></span
+    ></a>
     <!--En esta parte esta el icono y el titulo del sitio web -->
     <header id="sinPad" class="container-fluid">
       <!------------------Aca esta la barra de menu-------------------->
@@ -1244,34 +1256,32 @@
     </main>
     <!--Este seria el pie de pagina donde estan los datos de copyright y los links de facebook y twitter -->
     <footer id="sinPad sinMarg" class="container-fluid bg-dark">
-      <div class="row align-items-center">
-        <p class="copyright col-sm-4">©Marcos Herbas</p>
-        <div
+      <div class="row align-items-center gap-5">
+        <img
+          class="col-sm-4 copyright"
+          src="../Imagenes de trabajo/copyright.png"
+          alt="copyright"
+        />
+        <a
           id="sinPad"
-          class="row col-sm-8 justify-content-end align-items-center"
-        >
-          <a
-            id="sinPad"
-            class="adaptar"
-            href="https://www.facebook.com/"
-            target="_blank"
-            ><img
-              class="contactos"
-              src="../Imagenes de trabajo/facebook logo.png"
-              alt="link de facebook"
-          /></a>
-
-          <a
-            id="sinPad"
-            class="adaptar"
-            href="https://twitter.com/login"
-            target="_blank"
-            ><img
-              class="contactosSegundo"
-              src="../Imagenes de trabajo/twitter link.png"
-              alt="link de twitter"
-          /></a>
-        </div>
+          class="adaptar col-sm-4"
+          href="https://www.facebook.com/"
+          target="_blank"
+          ><img
+            class="contactos"
+            src="../Imagenes de trabajo/facebook.svg"
+            alt="link de facebook"
+        /></a>
+        <a
+          id="sinPad"
+          class="adaptar col-sm-4"
+          href="https://twitter.com/login"
+          target="_blank"
+          ><img
+            class="contactos"
+            src="../Imagenes de trabajo/twitter.svg"
+            alt="link de twitter"
+        /></a>
       </div>
     </footer>
   </body>
