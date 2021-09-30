@@ -24,6 +24,10 @@
       integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
       crossorigin="anonymous"
     ></script>
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- JS -->
+    <script src="../js/java.js"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="../css/main.css" />
     <!-- TIPOGRAFIA -->
@@ -36,6 +40,14 @@
     <title>Mega Man | Todo Megaman</title>
   </head>
   <body id="sinPad" class="container-fluid bgBody">
+    <!-- Botton Back To Top -->
+    <a
+      href="javascript:void(0);"
+      id="scroll"
+      title="Volver al comienzo"
+      class="botton-btt"
+      >Top<span></span
+    ></a>
     <!--En esta parte esta el icono y el titulo del sitio web -->
     <header id="sinPad" class="container-fluid">
       <!------------------Aca esta la barra de menu-------------------->
@@ -102,7 +114,7 @@
                 >
                   <li>
                     <a class="dropdown-item" href="saga_clasica.html"
-                      >saca clasica</a
+                      >saga clasica</a
                     >
                   </li>
                   <li>
@@ -138,12 +150,12 @@
       <!-- ------------------------------------------------ -->
     </header>
     <main class="container mainBg">
-      <section class="row justify-content-end">
-        <article class="row justify-content-center">
-          <h1 id="titulo">"Saga Clasica"</h1>
-          <h2 id="subtitulo">Megaman I</h2>
+      <section class="row mx-0">
+        <article class="row justify-content-center my-5">
+          <h1 id="titulo" class="my-4">"Saga Clasica"</h1>
+          <h2 id="subtitulo" class="my-4">Megaman I</h2>
           <div class="row justify-content-center">
-            <div id="imagenS">
+            <div id="imagenS" class="my-5">
               <div
                 id="carouselExampleCaptions"
                 class="carousel slide"
@@ -188,7 +200,7 @@
                       id="imagenS"
                       src="../Imagenes de trabajo/saga clasica/megaman 1 menu.jpg"
                       class="d-block"
-                      alt="..."
+                      alt="rockman menu"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Menú principal</p>
@@ -199,7 +211,7 @@
                       id="imagenS"
                       src="../Imagenes de trabajo/saga clasica/megaman 1 gameplay.jpg"
                       class="d-block"
-                      alt="..."
+                      alt="rockman gameplay"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Imagen de Gameplay</p>
@@ -233,7 +245,7 @@
               </div>
             </div>
           </div>
-          <p id="parrafos">
+          <p id="parrafos" class="my-5">
             En el año 200X, los robots desarrollados para ayudar a la humanidad
             son comunes gracias a los esfuerzos del reconocido diseñador de
             robots Dr. Light. Sin embargo, un día estos robots se descontrolan y
@@ -252,10 +264,10 @@
             regresa con su familia.
           </p>
         </article>
-        <article class="row justify-content-center">
-          <h2 id="subtitulo">Megaman II</h2>
+        <article class="row justify-content-center my-5">
+          <h2 id="subtitulo" class="my-4">Megaman II</h2>
           <div class="row justify-content-center">
-            <div id="imagenS">
+            <div id="imagenS" class="my-5">
               <div
                 id="carouselExampleCaptions2"
                 class="carousel slide"
@@ -289,7 +301,7 @@
                       id="imagenS"
                       src="../Imagenes de trabajo/saga clasica/megaman 2.jpg"
                       class="d-block"
-                      alt="rockman 1"
+                      alt="rockman 2"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Portada del juego</p>
@@ -300,7 +312,7 @@
                       id="imagenS"
                       src="../Imagenes de trabajo/saga clasica/megaman 2 menu.jpg"
                       class="d-block"
-                      alt="..."
+                      alt="rockman 2 menu"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Menú principal</p>
@@ -311,7 +323,7 @@
                       id="imagenS"
                       src="../Imagenes de trabajo/saga clasica/megaman 2 gameplay.jpg"
                       class="d-block"
-                      alt="..."
+                      alt="rockman 2 gameplay"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Imagen de Gameplay</p>
@@ -345,7 +357,7 @@
               </div>
             </div>
           </div>
-          <p id="parrafos">
+          <p id="parrafos" class="my-5">
             MegaMan 2 tiene lugar un año después del MegaMan original. Después
             de su derrota inicial, el Dr. Wily, el principal antagonista de la
             serie, crea su propio conjunto de Robot Masters en un intento de
@@ -364,10 +376,10 @@
           </p>
         </article>
 
-        <article class="row justify-content-center">
-          <h2 id="subtitulo">Megaman III</h2>
+        <article class="row justify-content-center my-5">
+          <h2 id="subtitulo" class="my-4">Megaman III</h2>
           <div class="row justify-content-center">
-            <div id="imagenS">
+            <div id="imagenS" class="my-5">
               <div
                 id="carouselExampleCaptions3"
                 class="carousel slide"
@@ -401,7 +413,7 @@
                       id="imagenS"
                       src="../Imagenes de trabajo/saga clasica/megaman 3.jpg"
                       class="d-block"
-                      alt="rockman 1"
+                      alt="rockman 3"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Portada del juego</p>
@@ -412,7 +424,7 @@
                       id="imagenS"
                       src="../Imagenes de trabajo/saga clasica/megaman 3 menu.jpg"
                       class="d-block"
-                      alt="..."
+                      alt="rockman 3 menu"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Menú principal</p>
@@ -423,7 +435,7 @@
                       id="imagenS"
                       src="../Imagenes de trabajo/saga clasica/megaman 3 gameplay.png"
                       class="d-block"
-                      alt="..."
+                      alt="rockman 3 gameplay"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Imagen de Gameplay</p>
@@ -457,7 +469,7 @@
               </div>
             </div>
           </div>
-          <p id="parrafos">
+          <p id="parrafos" class="my-5">
             Comienza explicando hechos ocurridos antes de MegaMan(juego), Dr.
             Light crea un robot al cual llama Proto Man, el robot escapa sin
             dejar rastro, el Dr. Light decide no quedarse en el pasado y crea a
@@ -469,10 +481,10 @@
             debe salir y destruir los 8 Robots Masters.
           </p>
         </article>
-        <article class="row justify-content-center">
-          <h2 id="subtitulo">Megaman IV</h2>
+        <article class="row justify-content-center my-5">
+          <h2 id="subtitulo" class="my-4">Megaman IV</h2>
           <div class="row justify-content-center">
-            <div id="imagenS">
+            <div id="imagenS" class="my-5">
               <div
                 id="carouselExampleCaptions4"
                 class="carousel slide"
@@ -506,7 +518,7 @@
                       id="imagenS"
                       src="../Imagenes de trabajo/saga clasica/megaman 4.jpg"
                       class="d-block"
-                      alt="rockman 1"
+                      alt="rockman 4"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Portada del juego</p>
@@ -517,7 +529,7 @@
                       id="imagenS"
                       src="../Imagenes de trabajo/saga clasica/megaman 4 menu.jpg"
                       class="d-block"
-                      alt="..."
+                      alt="rockman 4 menu"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Menú principal</p>
@@ -528,7 +540,7 @@
                       id="imagenS"
                       src="../Imagenes de trabajo/saga clasica/megaman 4 gameplay.jpg"
                       class="d-block"
-                      alt="..."
+                      alt="rockman 4 gameplay"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Imagen de Gameplay</p>
@@ -562,7 +574,7 @@
               </div>
             </div>
           </div>
-          <p id="parrafos">
+          <p id="parrafos" class="my-5">
             Todo comienza después de la "supuesta" muerte de Dr. Wily, todo era
             paz y tranquilidad hasta que el Dr. Cossack, un científico ruso,
             crea 8 Robots Masters para perturbar la paz, MegaMan es forzado a
@@ -574,10 +586,10 @@
           </p>
         </article>
 
-        <article class="row justify-content-center">
-          <h2 id="subtitulo">Megaman V</h2>
+        <article class="row justify-content-center my-5">
+          <h2 id="subtitulo" class="my-4">Megaman V</h2>
           <div class="row justify-content-center">
-            <div id="imagenS">
+            <div id="imagenS" class="my-5">
               <div
                 id="carouselExampleCaptions5"
                 class="carousel slide"
@@ -611,7 +623,7 @@
                       id="imagenS"
                       src="../Imagenes de trabajo/saga clasica/megaman 5.jpg"
                       class="d-block"
-                      alt="rockman 1"
+                      alt="rockman 5"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Portada del juego</p>
@@ -622,7 +634,7 @@
                       id="imagenS"
                       src="../Imagenes de trabajo/saga clasica/megaman 5 menu.jpg"
                       class="d-block"
-                      alt="..."
+                      alt="rockman 5 menu"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Menú principal</p>
@@ -633,7 +645,7 @@
                       id="imagenS"
                       src="../Imagenes de trabajo/saga clasica/megaman 5 gameplay.jpg"
                       class="d-block"
-                      alt="..."
+                      alt="rockman 5 gameplay"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Imagen de Gameplay</p>
@@ -667,7 +679,7 @@
               </div>
             </div>
           </div>
-          <p id="parrafos">
+          <p id="parrafos" class="my-5">
             Esta historia toma lugar dos meses después de los acontecimientos de
             MegaMan 4, cuando el científico loco Dr. Wily, una vez más trata de
             apoderarse del mundo.​ Proto Man, hermano de MegaMan y en su día
@@ -690,10 +702,10 @@
           </p>
         </article>
 
-        <article class="row justify-content-center">
-          <h2 id="subtitulo">Megaman VI</h2>
+        <article class="row justify-content-center my-5">
+          <h2 id="subtitulo" class="my-4">Megaman VI</h2>
           <div class="row justify-content-center">
-            <div id="imagenS">
+            <div id="imagenS" class="my-5">
               <div
                 id="carouselExampleCaptions6"
                 class="carousel slide"
@@ -727,7 +739,7 @@
                       id="imagenS"
                       src="../Imagenes de trabajo/saga clasica/megaman 6.jpg"
                       class="d-block"
-                      alt="rockman 1"
+                      alt="rockman 6"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Portada del juego</p>
@@ -738,7 +750,7 @@
                       id="imagenS"
                       src="../Imagenes de trabajo/saga clasica/megaman 6 menu.png"
                       class="d-block"
-                      alt="..."
+                      alt="rockman 6 menu"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Menú principal</p>
@@ -749,7 +761,7 @@
                       id="imagenS"
                       src="../Imagenes de trabajo/saga clasica/megaman 6 gameplay.jpg"
                       class="d-block"
-                      alt="..."
+                      alt="rockman 6 gameplay"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Imagen de Gameplay</p>
@@ -783,7 +795,7 @@
               </div>
             </div>
           </div>
-          <p id="parrafos">
+          <p id="parrafos" class="my-5">
             Los diseñadores de robots más talentosos de todo el mundo han
             llegado al primer Torneo Anual Robot patrocinado por el
             multimillonario Mr. X. Viajando desde varios países, los diseñadores
@@ -797,10 +809,10 @@
           </p>
         </article>
 
-        <article class="row justify-content-center">
-          <h2 id="subtitulo">Megaman VII</h2>
+        <article class="row justify-content-center my-5">
+          <h2 id="subtitulo" class="my-4">Megaman VII</h2>
           <div class="row justify-content-center">
-            <div id="imagenM">
+            <div id="imagenM" class="my-5">
               <div
                 id="carouselExampleCaptions7"
                 class="carousel slide"
@@ -834,7 +846,7 @@
                       id="imagenM"
                       src="../Imagenes de trabajo/saga clasica/megaman 7.jpg"
                       class="d-block"
-                      alt="rockman 1"
+                      alt="rockman 7"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Portada del juego</p>
@@ -845,7 +857,7 @@
                       id="imagenM"
                       src="../Imagenes de trabajo/saga clasica/megaman 7 menu.jpg"
                       class="d-block"
-                      alt="..."
+                      alt="rockman 7 menu"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Menú principal</p>
@@ -856,7 +868,7 @@
                       id="imagenM"
                       src="../Imagenes de trabajo/saga clasica/megaman 7 gameplay.gif"
                       class="d-block"
-                      alt="..."
+                      alt="rockman 7 gameplay"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Imagen de Gameplay</p>
@@ -890,7 +902,7 @@
               </div>
             </div>
           </div>
-          <p id="parrafos">
+          <p id="parrafos" class="my-5">
             Seis meses después del encarcelamiento del Dr. Wily, 4 robots que
             estaban ocultos en su laboratorio se activan y lo sacan de la cárcel
             y comenzaron a causar estragos en la ciudad. MegaMan fue a
@@ -915,10 +927,10 @@
           </p>
         </article>
 
-        <article class="row justify-content-center">
-          <h2 id="subtitulo">Megaman VIII</h2>
+        <article class="row justify-content-center my-5">
+          <h2 id="subtitulo" class="my-4">Megaman VIII</h2>
           <div class="row justify-content-center">
-            <div id="imagenM">
+            <div id="imagenM" class="my-5">
               <div
                 id="carouselExampleCaptions8"
                 class="carousel slide"
@@ -952,7 +964,7 @@
                       id="imagenM"
                       src="../Imagenes de trabajo/saga clasica/megaman 8.jpg"
                       class="d-block"
-                      alt="rockman 1"
+                      alt="rockman 8"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Portada del juego</p>
@@ -963,7 +975,7 @@
                       id="imagenM"
                       src="../Imagenes de trabajo/saga clasica/megaman 8 menu.jpg"
                       class="d-block"
-                      alt="..."
+                      alt="rockman 8 menu"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Menú principal</p>
@@ -974,7 +986,7 @@
                       id="imagenM"
                       src="../Imagenes de trabajo/saga clasica/megaman 8 gameplay.jpg"
                       class="d-block"
-                      alt="..."
+                      alt="rockman 8 gameplay"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Imagen de Gameplay</p>
@@ -1008,7 +1020,7 @@
               </div>
             </div>
           </div>
-          <p id="parrafos">
+          <p id="parrafos" class="my-5">
             La historia comienza con 2 alienigenas robots peleandose y terminan
             cayendo en la tierra, mientras tanto MegaMan y su compañero Rush
             estan peleando con Bass y Treble. MegaMan es alertado por Dr. Light
@@ -1045,10 +1057,10 @@
           </p>
         </article>
 
-        <article class="row justify-content-center">
-          <h2 id="subtitulo">Megaman&Bass</h2>
+        <article class="row justify-content-center my-5">
+          <h2 id="subtitulo" class="my-4">Megaman & Bass</h2>
           <div class="row justify-content-center">
-            <div id="imagenM">
+            <div id="imagenM" class="my-5">
               <div
                 id="carouselExampleCaptions9"
                 class="carousel slide"
@@ -1082,7 +1094,7 @@
                       id="imagenM"
                       src="../Imagenes de trabajo/saga clasica/megaman&bass.jpg"
                       class="d-block"
-                      alt="rockman 1"
+                      alt="rockman&forte"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Portada del juego</p>
@@ -1093,7 +1105,7 @@
                       id="imagenM"
                       src="../Imagenes de trabajo/saga clasica/megaman&bass menu.png"
                       class="d-block"
-                      alt="..."
+                      alt="rockman&forte menu"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Menú principal</p>
@@ -1104,7 +1116,7 @@
                       id="imagenM"
                       src="../Imagenes de trabajo/saga clasica/megaman&bass gameplay.jpg"
                       class="d-block"
-                      alt="..."
+                      alt="rockman&forte gameplay"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Imagen de Gameplay</p>
@@ -1138,7 +1150,7 @@
               </div>
             </div>
           </div>
-          <p id="parrafos">
+          <p id="parrafos" class="my-5">
             Esto ocurre 1 año despues de lo ocurrido en la anterior entrega
             (Megaman 8). Un nuevo robot con el nombre de King aparece
             autoproclamandose como el más fuerte y deseando crear una utopía
@@ -1165,10 +1177,10 @@
           </p>
         </article>
 
-        <article class="row justify-content-center">
-          <h2 id="subtitulo">Megaman IX</h2>
+        <article class="row justify-content-center my-5">
+          <h2 id="subtitulo" class="my-4">Megaman IX</h2>
           <div class="row justify-content-center">
-            <div id="imagenM">
+            <div id="imagenM" class="my-5">
               <div
                 id="carouselExampleCaptions10"
                 class="carousel slide"
@@ -1202,7 +1214,7 @@
                       id="imagenM"
                       src="../Imagenes de trabajo/saga clasica/megaman 9.jpg"
                       class="d-block"
-                      alt="rockman 1"
+                      alt="rockman 9"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Portada del juego</p>
@@ -1213,7 +1225,7 @@
                       id="imagenM"
                       src="../Imagenes de trabajo/saga clasica/megaman 9 menu.jpg"
                       class="d-block"
-                      alt="..."
+                      alt="rockman 9 menu"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Menú principal</p>
@@ -1224,7 +1236,7 @@
                       id="imagenM"
                       src="../Imagenes de trabajo/saga clasica/megaman 9 gameplay.jpg"
                       class="d-block"
-                      alt="..."
+                      alt="rockman 9 gameplay"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Imagen de Gameplay</p>
@@ -1258,7 +1270,7 @@
               </div>
             </div>
           </div>
-          <p id="parrafos">
+          <p id="parrafos" class="my-5">
             Esta entrega empieza con ya 8 Robots Master provocando caos en la
             ciudad por un momento todo apunta que es Wily otra vez pero este
             sale a declarar que esta vez no es el ya que cambio como persona,
@@ -1276,10 +1288,10 @@
           </p>
         </article>
 
-        <article class="row justify-content-center">
-          <h2 id="subtitulo">Megaman X(10)</h2>
+        <article class="row justify-content-center my-5">
+          <h2 id="subtitulo" class="my-4">Megaman X(10)</h2>
           <div class="row justify-content-center">
-            <div id="imagenS">
+            <div id="imagenS" class="my-5">
               <div
                 id="carouselExampleCaptions11"
                 class="carousel slide"
@@ -1313,7 +1325,7 @@
                       id="imagenS"
                       src="../Imagenes de trabajo/saga clasica/megaman 10.jpg"
                       class="d-block"
-                      alt="rockman 1"
+                      alt="rockman 10"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Portada del juego</p>
@@ -1324,7 +1336,7 @@
                       id="imagenS"
                       src="../Imagenes de trabajo/saga clasica/megaman 10 menu.jpg"
                       class="d-block"
-                      alt="..."
+                      alt="rockman 10 menu"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Menú principal</p>
@@ -1335,7 +1347,7 @@
                       id="imagenS"
                       src="../Imagenes de trabajo/saga clasica/megaman 10 gameplay.jpg"
                       class="d-block"
-                      alt="..."
+                      alt="rockman 10 gameplay"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Imagen de Gameplay</p>
@@ -1369,7 +1381,7 @@
               </div>
             </div>
           </div>
-          <p id="parrafos">
+          <p id="parrafos" class="my-5">
             Cuando todo estaba en paz una enfermedad azota la ciudad al cual
             solo ataca a los robots haciendo que funcionen mal, esta enfermedad
             es llamada Roboenza. 1 mes despues roll (su hermana) tambien contrae
@@ -1401,10 +1413,10 @@
             suficiente para curar a todos los enfermos.
           </p>
         </article>
-        <article class="row justify-content-center">
-          <h2 id="subtitulo">Megaman XI</h2>
+        <article class="row justify-content-center my-5">
+          <h2 id="subtitulo" class="my-4">Megaman XI</h2>
           <div class="row justify-content-center">
-            <div id="imagenL">
+            <div id="imagenL" class="my-5">
               <div
                 id="carouselExampleCaptions12"
                 class="carousel slide"
@@ -1438,7 +1450,7 @@
                       id="imagenL"
                       src="../Imagenes de trabajo/saga clasica/megaman 11.jpg"
                       class="d-block"
-                      alt="rockman 1"
+                      alt="rockman 11"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Portada del juego</p>
@@ -1449,7 +1461,7 @@
                       id="imagenL"
                       src="../Imagenes de trabajo/saga clasica/megaman 11 menu.jpg"
                       class="d-block"
-                      alt="..."
+                      alt="rockman 11 menu"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Menú principal</p>
@@ -1460,7 +1472,7 @@
                       id="imagenL"
                       src="../Imagenes de trabajo/saga clasica/megaman 11 gameplay.jpg"
                       class="d-block"
-                      alt="..."
+                      alt="rockman 11 gameplay"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Imagen de Gameplay</p>
@@ -1494,7 +1506,7 @@
               </div>
             </div>
           </div>
-          <p id="parrafos">
+          <p id="parrafos" class="my-5">
             Esta entrega empiza con un recuerdo muy lejano uno donde el Dr Light
             y Wily aun eran universitarios y estaban investigando la robotica,
             en ese entonces Wily habia creado un objeto que queria adherir a los
@@ -1515,34 +1527,32 @@
     </main>
     <!--Este seria el pie de pagina donde estan los datos de copyright y los links de facebook y twitter -->
     <footer id="sinPad sinMarg" class="container-fluid bg-dark">
-      <div class="row align-items-center">
-        <p class="copyright col-sm-4">©Marcos Herbas</p>
-        <div
+      <div class="row align-items-center gap-3">
+        <img
+          class="col-sm-4 copyright"
+          src="../Imagenes de trabajo/copyright.png"
+          alt="copyright"
+        />
+        <a
           id="sinPad"
-          class="row col-sm-8 justify-content-end align-items-center"
-        >
-          <a
-            id="sinPad"
-            class="adaptar"
-            href="https://www.facebook.com/"
-            target="_blank"
-            ><img
-              class="contactos"
-              src="../Imagenes de trabajo/facebook logo.png"
-              alt="link de facebook"
-          /></a>
-
-          <a
-            id="sinPad"
-            class="adaptar"
-            href="https://twitter.com/login"
-            target="_blank"
-            ><img
-              class="contactosSegundo"
-              src="../Imagenes de trabajo/twitter link.png"
-              alt="link de twitter"
-          /></a>
-        </div>
+          class="adaptar col-sm-4"
+          href="https://www.facebook.com/"
+          target="_blank"
+          ><img
+            class="contactos"
+            src="../Imagenes de trabajo/facebook.svg"
+            alt="link de facebook"
+        /></a>
+        <a
+          id="sinPad"
+          class="adaptar col-sm-4"
+          href="https://twitter.com/login"
+          target="_blank"
+          ><img
+            class="contactos"
+            src="../Imagenes de trabajo/twitter.svg"
+            alt="link de twitter"
+        /></a>
       </div>
     </footer>
   </body>

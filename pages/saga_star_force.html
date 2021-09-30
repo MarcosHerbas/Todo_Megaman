@@ -24,6 +24,10 @@
       integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
       crossorigin="anonymous"
     ></script>
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- JS -->
+    <script src="../js/java.js"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="../css/main.css" />
     <!-- TIPOGRAFIA -->
@@ -36,6 +40,14 @@
     <title>Mega Man Star Force | Todo Megaman</title>
   </head>
   <body id="sinPad" class="container-fluid bgBody">
+    <!-- Botton Back To Top -->
+    <a
+      href="javascript:void(0);"
+      id="scroll"
+      title="Volver al comienzo"
+      class="botton-btt"
+      >Top<span></span
+    ></a>
     <!--En esta parte esta el icono y el titulo del sitio web -->
     <header id="sinPad" class="container-fluid">
       <!------------------Aca esta la barra de menu-------------------->
@@ -102,7 +114,7 @@
                 >
                   <li>
                     <a class="dropdown-item" href="saga_clasica.html"
-                      >saca clasica</a
+                      >saga clasica</a
                     >
                   </li>
                   <li>
@@ -138,12 +150,14 @@
       <!-- ------------------------------------------------ -->
     </header>
     <main class="container mainBg">
-      <section class="row justify-content-end">
-        <article class="row justify-content-center">
-          <h1 id="titulo">"Saga Star Force"</h1>
-          <h2 id="subtitulo">Megaman Star Force (Leo, Dragon y Pegasus)</h2>
+      <section class="row mx-0">
+        <article class="row justify-content-center my-5">
+          <h1 id="titulo" class="col-sm-12 my-4">"Saga Star Force"</h1>
+          <h2 id="subtitulo" class="col-sm-12 my-4">
+            Megaman Star Force (Leo, Dragon y Pegasus)
+          </h2>
           <div class="row justify-content-center">
-            <div id="imagenM">
+            <div id="imagenM" class="col-sm-12 my-5">
               <div
                 id="carouselExampleCaptions"
                 class="carousel slide"
@@ -177,7 +191,7 @@
                       id="imagenM"
                       src="../Imagenes de trabajo/saga star force/megaman star force portada leo.jpg"
                       class="d-block"
-                      alt="rockman x"
+                      alt="rockman star force"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Portada del juego</p>
@@ -188,7 +202,7 @@
                       id="imagenM"
                       src="../Imagenes de trabajo/saga star force/megaman star force menu.jpg"
                       class="d-block"
-                      alt="..."
+                      alt="rockman star force menu"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Menú principal</p>
@@ -199,7 +213,7 @@
                       id="imagenM"
                       src="../Imagenes de trabajo/saga star force/megaman star force gameplay.jpg"
                       class="d-block"
-                      alt="..."
+                      alt="rockman star force gameplay"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Imagen de Gameplay</p>
@@ -233,7 +247,7 @@
               </div>
             </div>
           </div>
-          <p id="parrafos">
+          <p id="parrafos" class="col-sm-12 my-5">
             La historia comienza en la ciudad de Echo Ridge, en donde habita
             nuestro protagonista, un chico llamado Geo Stelar. Él es un
             estudiante de 5º grado de primaria, algo solitario, que recibe la
@@ -256,12 +270,12 @@
             MegaMan debe evitarlo.
           </p>
         </article>
-        <article>
-          <h2 id="subtitulo">
+        <article class="row justify-content-center my-5">
+          <h2 id="subtitulo" class="col-sm-12 my-4">
             Megaman Star Force 2 (Zeker x Saurian y Zeker x Ninja)
           </h2>
           <div class="row justify-content-center">
-            <div id="imagenM">
+            <div id="imagenM" class="col-sm-12 my-5">
               <div
                 id="carouselExampleCaptions2"
                 class="carousel slide"
@@ -295,7 +309,7 @@
                       id="imagenM"
                       src="../Imagenes de trabajo/saga star force/megaman star force 2 portada zerker x ninja.jpg"
                       class="d-block"
-                      alt="rockman x2"
+                      alt="rockman star force 2"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Portada del juego</p>
@@ -306,7 +320,7 @@
                       id="imagenM"
                       src="../Imagenes de trabajo/saga star force/megaman star force 2 menu.jpg"
                       class="d-block"
-                      alt="rockman x2 menu"
+                      alt="rockman star force 2 menu"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Menú principal</p>
@@ -317,7 +331,7 @@
                       id="imagenM"
                       src="../Imagenes de trabajo/saga star force/megaman star force 2 gameplay.jpg"
                       class="d-block"
-                      alt="..."
+                      alt="rockman star force 2 gameplay"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Imagen de Gameplay</p>
@@ -351,7 +365,7 @@
               </div>
             </div>
           </div>
-          <p id="parrafos">
+          <p id="parrafos" class="col-sm-12 my-5">
             Han pasado 2 meses desde el ataque de los FM-Ianos y todo es
             tranquilidad, pero lo que no saben es que hay una nueva amenaza. Al
             empezar el juego Geo recibe un Star Carrier, un nuevo objeto
@@ -375,10 +389,12 @@
           </p>
         </article>
 
-        <article>
-          <h2 id="subtitulo">Megaman Star Force 3 (Black Ace y Red Joker)</h2>
+        <article class="row justify-content-center my-5">
+          <h2 id="subtitulo" class="col-sm-12 my-4">
+            Megaman Star Force 3 (Black Ace y Red Joker)
+          </h2>
           <div class="row justify-content-center">
-            <div id="imagenM">
+            <div id="imagenM" class="col-sm-12 my-5">
               <div
                 id="carouselExampleCaptions3"
                 class="carousel slide"
@@ -412,7 +428,7 @@
                       id="imagenM"
                       src="../Imagenes de trabajo/saga star force/megaman star force 3 portada black ace.jpg"
                       class="d-block"
-                      alt="rockman x3"
+                      alt="rockman star force 3"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Portada del juego</p>
@@ -423,7 +439,7 @@
                       id="imagenM"
                       src="../Imagenes de trabajo/saga star force/megaman star force 3 menu.jpg"
                       class="d-block"
-                      alt="..."
+                      alt="rockman star force 3 menu"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Menú principal</p>
@@ -434,7 +450,7 @@
                       id="imagenM"
                       src="../Imagenes de trabajo/saga star force/megaman star force 3 gameplay.jpg"
                       class="d-block"
-                      alt="..."
+                      alt="rockman star force 3 gameplay"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Imagen de Gameplay</p>
@@ -468,7 +484,7 @@
               </div>
             </div>
           </div>
-          <p id="parrafos">
+          <p id="parrafos" class="col-sm-12 my-5">
             Un Meteoro Rojo se dirige a la Tierra mientras que Jack y Queen Tía
             hablan del Día Final de la Tierra. Varios meses después desde la
             derrota de Le Mu, Geo vuelve al colegio donde toda la gente comienza
@@ -490,42 +506,39 @@
             insatisfecha y va a hablar con los alumnos del Club de Ciencias para
             ayudarlos, pero la única manera de ayudarlos es dandole una Mega
             Tarjeta de Energía, pero son casi imposibles de conseguir, pero Geo
-            recibe un correo de A.C.Eos. Y este le dice que si participa en un
-            torneo en el Centro Comercial Spica...
+            recibe un correo de A.C.Eos...
           </p>
         </article>
       </section>
     </main>
     <!--Este seria el pie de pagina donde estan los datos de copyright y los links de facebook y twitter -->
     <footer id="sinPad sinMarg" class="container-fluid bg-dark">
-      <div class="row align-items-center">
-        <p class="copyright col-sm-4">©Marcos Herbas</p>
-        <div
+      <div class="row align-items-center gap-3">
+        <img
+          class="col-sm-4 copyright"
+          src="../Imagenes de trabajo/copyright.png"
+          alt="copyright"
+        />
+        <a
           id="sinPad"
-          class="row col-sm-8 justify-content-end align-items-center"
-        >
-          <a
-            id="sinPad"
-            class="adaptar"
-            href="https://www.facebook.com/"
-            target="_blank"
-            ><img
-              class="contactos"
-              src="../Imagenes de trabajo/facebook logo.png"
-              alt="link de facebook"
-          /></a>
-
-          <a
-            id="sinPad"
-            class="adaptar"
-            href="https://twitter.com/login"
-            target="_blank"
-            ><img
-              class="contactosSegundo"
-              src="../Imagenes de trabajo/twitter link.png"
-              alt="link de twitter"
-          /></a>
-        </div>
+          class="adaptar col-sm-4"
+          href="https://www.facebook.com/"
+          target="_blank"
+          ><img
+            class="contactos"
+            src="../Imagenes de trabajo/facebook.svg"
+            alt="link de facebook"
+        /></a>
+        <a
+          id="sinPad"
+          class="adaptar col-sm-4"
+          href="https://twitter.com/login"
+          target="_blank"
+          ><img
+            class="contactos"
+            src="../Imagenes de trabajo/twitter.svg"
+            alt="link de twitter"
+        /></a>
       </div>
     </footer>
   </body>

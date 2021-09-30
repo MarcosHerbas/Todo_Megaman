@@ -24,6 +24,10 @@
       integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
       crossorigin="anonymous"
     ></script>
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- JS -->
+    <script src="../js/java.js"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="../css/main.css" />
     <!-- TIPOGRAFIA -->
@@ -36,6 +40,14 @@
     <title>¡Apoyanos con tu comentario! | Todo Megaman</title>
   </head>
   <body id="sinPad" class="container-fluid bgBody">
+    <!-- Botton Back To Top -->
+    <a
+      href="javascript:void(0);"
+      id="scroll"
+      title="Volver al comienzo"
+      class="botton-btt"
+      >Top<span></span
+    ></a>
     <!--En esta parte esta el icono y el titulo del sitio web -->
     <header id="sinPad" class="container-fluid">
       <!------------------Aca esta la barra de menu-------------------->
@@ -51,7 +63,6 @@
               alt="logo de la pagina"
             />
           </a>
-
           <button
             class="navbar-toggler"
             type="button"
@@ -102,7 +113,7 @@
                 >
                   <li>
                     <a class="dropdown-item" href="saga_clasica.html"
-                      >saca clasica</a
+                      >saga clasica</a
                     >
                   </li>
                   <li>
@@ -139,10 +150,10 @@
     </header>
     <main class="container mainBg">
       <div class="row">
-        <h1 id="titulo" class="col-sm-12">Ayudanos a Crecer</h1>
-        <div id="bgFormulario" class="container w-75 col-sm-12">
+        <h1 id="titulo" class="col-sm-12 my-5">¡Ayudanos a Crecer!</h1>
+        <div id="bgFormulario" class="container w-75 col-sm-12 my-5">
           <form class="textoFormulario">
-            <div class="form-group row">
+            <div class="form-group row my-5">
               <label for="nombre" class="col-sm-2 col-form-label">Nombre</label>
               <div class="col-sm-10">
                 <input
@@ -153,7 +164,7 @@
                 />
               </div>
             </div>
-            <div class="form-group row">
+            <div class="form-group row my-5">
               <label for="apellido" class="col-sm-2 col-form-label"
                 >Apellido</label
               >
@@ -166,7 +177,7 @@
                 />
               </div>
             </div>
-            <div class="form-group row">
+            <div class="form-group row my-5">
               <label for="inputEmail3" class="col-sm-2 col-form-label"
                 >Email</label
               >
@@ -180,7 +191,7 @@
               </div>
             </div>
             <fieldset class="form-group">
-              <div class="row">
+              <div class="row my-5">
                 <legend class="col-form-label col-sm-2 pt-0">Sexo</legend>
                 <div class="col-sm-10">
                   <div class="form-check">
@@ -211,7 +222,7 @@
                 </div>
               </div>
             </fieldset>
-            <div class="form-group row">
+            <div class="form-group row my-5">
               <div class="col-sm-2">Opcional</div>
               <div class="col-sm-10">
                 <div class="form-check">
@@ -226,7 +237,7 @@
                 </div>
               </div>
             </div>
-            <div class="mb-3">
+            <div class="mb-4">
               <label for="exampleFormControlTextarea1" class="form-label"
                 >Dejanos tu opinión</label
               >
@@ -254,34 +265,32 @@
     </main>
     <!--Este seria el pie de pagina donde estan los datos de copyright y los links de facebook y twitter -->
     <footer id="sinPad sinMarg" class="container-fluid bg-dark">
-      <div class="row align-items-center">
-        <p class="copyright col-sm-4">©Marcos Herbas</p>
-        <div
+      <div class="row align-items-center gap-3">
+        <img
+          class="col-sm-4 copyright"
+          src="../Imagenes de trabajo/copyright.png"
+          alt="copyright"
+        />
+        <a
           id="sinPad"
-          class="row col-sm-8 justify-content-end align-items-center"
-        >
-          <a
-            id="sinPad"
-            class="adaptar"
-            href="https://www.facebook.com/"
-            target="_blank"
-            ><img
-              class="contactos"
-              src="../Imagenes de trabajo/facebook logo.png"
-              alt="link de facebook"
-          /></a>
-
-          <a
-            id="sinPad"
-            class="adaptar"
-            href="https://twitter.com/login"
-            target="_blank"
-            ><img
-              class="contactosSegundo"
-              src="../Imagenes de trabajo/twitter link.png"
-              alt="link de twitter"
-          /></a>
-        </div>
+          class="adaptar col-sm-4"
+          href="https://www.facebook.com/"
+          target="_blank"
+          ><img
+            class="contactos"
+            src="../Imagenes de trabajo/facebook.svg"
+            alt="link de facebook"
+        /></a>
+        <a
+          id="sinPad"
+          class="adaptar col-sm-4"
+          href="https://twitter.com/login"
+          target="_blank"
+          ><img
+            class="contactos"
+            src="../Imagenes de trabajo/twitter.svg"
+            alt="link de twitter"
+        /></a>
       </div>
     </footer>
   </body>

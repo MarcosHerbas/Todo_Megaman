@@ -24,6 +24,10 @@
       integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
       crossorigin="anonymous"
     ></script>
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- JS -->
+    <script src="../js/java.js"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="../css/main.css" />
     <!-- TIPOGRAFIA -->
@@ -36,6 +40,14 @@
     <title>Mega Man Zero | Todo Megaman</title>
   </head>
   <body id="sinPad" class="container-fluid bgBody">
+    <!-- Botton Back To Top -->
+    <a
+      href="javascript:void(0);"
+      id="scroll"
+      title="Volver al comienzo"
+      class="botton-btt"
+      >Top<span></span
+    ></a>
     <!--En esta parte esta el icono y el titulo del sitio web -->
     <header id="sinPad" class="container-fluid">
       <!------------------Aca esta la barra de menu-------------------->
@@ -102,7 +114,7 @@
                 >
                   <li>
                     <a class="dropdown-item" href="saga_clasica.html"
-                      >saca clasica</a
+                      >saga clasica</a
                     >
                   </li>
                   <li>
@@ -138,12 +150,12 @@
       <!-- ------------------------------------------------ -->
     </header>
     <main class="container mainBg">
-      <section class="row justify-content-end">
-        <article class="row justify-content-center">
-          <h1 id="titulo">"Saga Zero"</h1>
-          <h2 id="subtitulo">Megaman Zero</h2>
+      <section class="row mx-0">
+        <article class="row justify-content-center my-5">
+          <h1 id="titulo" class="col-sm-12 my-4">"Saga Zero"</h1>
+          <h2 id="subtitulo" class="col-sm-12 my-4">Megaman Zero</h2>
           <div class="row justify-content-center">
-            <div id="imagenM">
+            <div id="imagenM" class="col-sm-12 my-5">
               <div
                 id="carouselExampleCaptions"
                 class="carousel slide"
@@ -177,7 +189,7 @@
                       id="imagenM"
                       src="../Imagenes de trabajo/saga zero/megaman zero1.jpg"
                       class="d-block"
-                      alt="rockman x"
+                      alt="rockman zero"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Portada del juego</p>
@@ -188,7 +200,7 @@
                       id="imagenM"
                       src="../Imagenes de trabajo/saga zero/megaman zero menu.jpg"
                       class="d-block"
-                      alt="..."
+                      alt="rockman zero menu"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Menú principal</p>
@@ -199,7 +211,7 @@
                       id="imagenM"
                       src="../Imagenes de trabajo/saga zero/megaman zero gameplay.jpg"
                       class="d-block"
-                      alt="..."
+                      alt="rockman zero gameplay"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Imagen de Gameplay</p>
@@ -233,7 +245,7 @@
               </div>
             </div>
           </div>
-          <p id="parrafos">
+          <p id="parrafos" class="col-sm-12 my-5">
             En estasis desde las Guerras Élficas, el sueño de Zero se ve
             interrumpido bajo circunstancias como las de hace un siglo. Los
             Reploides y los humanos se encuentran en guerra. Con la esperanza de
@@ -243,10 +255,10 @@
             acepta ayudar a la Resistencia.
           </p>
         </article>
-        <article>
-          <h2 id="subtitulo">Megaman Zero 2</h2>
+        <article class="row justify-content-center my-5">
+          <h2 id="subtitulo" class="col-sm-12 my-4">Megaman Zero 2</h2>
           <div class="row justify-content-center">
-            <div id="imagenM">
+            <div id="imagenM" class="col-sm-12 my-5">
               <div
                 id="carouselExampleCaptions2"
                 class="carousel slide"
@@ -280,7 +292,7 @@
                       id="imagenM"
                       src="../Imagenes de trabajo/saga zero/megaman zero2.jpg"
                       class="d-block"
-                      alt="rockman x2"
+                      alt="rockman zero 2"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Portada del juego</p>
@@ -291,7 +303,7 @@
                       id="imagenM"
                       src="../Imagenes de trabajo/saga zero/megaman zero 2 menu.jpg"
                       class="d-block"
-                      alt="rockman x2 menu"
+                      alt="rockman zero 2 menu"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Menú principal</p>
@@ -302,7 +314,7 @@
                       id="imagenM"
                       src="../Imagenes de trabajo/saga zero/megaman zero 2 gameplay.jpg"
                       class="d-block"
-                      alt="..."
+                      alt="rockman zero 2 gameplay"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Imagen de Gameplay</p>
@@ -336,7 +348,7 @@
               </div>
             </div>
           </div>
-          <p id="parrafos">
+          <p id="parrafos" class="col-sm-12 my-5">
             Un joven funcionario Reploide llamado Elpizo fue elegido para
             liderar la Resistencia mientras Ciel se dedicaba a desarrollar una
             nueva fuente de energía; algo que ella esperaba que terminara la
@@ -348,10 +360,10 @@
           </p>
         </article>
 
-        <article>
-          <h2 id="subtitulo">Megaman Zero 3</h2>
+        <article class="row justify-content-center my-5">
+          <h2 id="subtitulo" class="col-sm-12 my-4">Megaman Zero 3</h2>
           <div class="row justify-content-center">
-            <div id="imagenM">
+            <div id="imagenM" class="col-sm-12 my-5">
               <div
                 id="carouselExampleCaptions3"
                 class="carousel slide"
@@ -385,7 +397,7 @@
                       id="imagenM"
                       src="../Imagenes de trabajo/saga zero/megaman zero3.jpg"
                       class="d-block"
-                      alt="rockman x3"
+                      alt="rockman zero 3"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Portada del juego</p>
@@ -396,7 +408,7 @@
                       id="imagenM"
                       src="../Imagenes de trabajo/saga zero/megaman zero 3 menu.png"
                       class="d-block"
-                      alt="..."
+                      alt="rockman zero 3 menu"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Menú principal</p>
@@ -407,7 +419,7 @@
                       id="imagenM"
                       src="../Imagenes de trabajo/saga zero/megaman zero 3 gameplay.jpg"
                       class="d-block"
-                      alt="..."
+                      alt="rockman zero 3 gameplay"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Imagen de Gameplay</p>
@@ -441,7 +453,7 @@
               </div>
             </div>
           </div>
-          <p id="parrafos">
+          <p id="parrafos" class="col-sm-12 my-5">
             Ciel ha logrado desarrollar una nueva fuente de energía, y está muy
             entusiasmada por la posibilidad de acabar con la guerra energética.
             Enseguida se pone en contacto con Neo Arcadia, pero se da cuenta que
@@ -452,10 +464,10 @@
             mutuo de X y Zero.
           </p>
         </article>
-        <article>
-          <h2 id="subtitulo">Megaman Zero 4</h2>
+        <article class="row justify-content-center my-5">
+          <h2 id="subtitulo" class="col-sm-12 my-4">Megaman Zero 4</h2>
           <div class="row justify-content-center">
-            <div id="imagenM">
+            <div id="imagenM" class="col-sm-12 my-5">
               <div
                 id="carouselExampleCaptions4"
                 class="carousel slide"
@@ -489,7 +501,7 @@
                       id="imagenM"
                       src="../Imagenes de trabajo/saga zero/megaman zero4.jpg"
                       class="d-block"
-                      alt="rockman x4"
+                      alt="rockman zero 4"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Portada del juego</p>
@@ -500,7 +512,7 @@
                       id="imagenM"
                       src="../Imagenes de trabajo/saga zero/megaman zero 4 menu.png"
                       class="d-block"
-                      alt="..."
+                      alt="rockman zero 4 menu"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Menú principal</p>
@@ -511,7 +523,7 @@
                       id="imagenM"
                       src="../Imagenes de trabajo/saga zero/megaman zero 4 gameplay.jpg"
                       class="d-block"
-                      alt="..."
+                      alt="rockman zero 4 gameplay"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Imagen de Gameplay</p>
@@ -545,7 +557,7 @@
               </div>
             </div>
           </div>
-          <p id="parrafos">
+          <p id="parrafos" class="col-sm-12 my-5">
             Bajo la dictadura impuesta por el Dr. Weil, Neo Arcadia se ha
             convertido en un infierno tanto para Humanos como para Reploides por
             lo cual, cualquier humano o Reploide que muestre señales de rebelión
@@ -592,34 +604,32 @@
     </main>
     <!--Este seria el pie de pagina donde estan los datos de copyright y los links de facebook y twitter -->
     <footer id="sinPad sinMarg" class="container-fluid bg-dark">
-      <div class="row align-items-center">
-        <p class="copyright col-sm-4">©Marcos Herbas</p>
-        <div
+      <div class="row align-items-center gap-3">
+        <img
+          class="col-sm-4 copyright"
+          src="../Imagenes de trabajo/copyright.png"
+          alt="copyright"
+        />
+        <a
           id="sinPad"
-          class="row col-sm-8 justify-content-end align-items-center"
-        >
-          <a
-            id="sinPad"
-            class="adaptar"
-            href="https://www.facebook.com/"
-            target="_blank"
-            ><img
-              class="contactos"
-              src="../Imagenes de trabajo/facebook logo.png"
-              alt="link de facebook"
-          /></a>
-
-          <a
-            id="sinPad"
-            class="adaptar"
-            href="https://twitter.com/login"
-            target="_blank"
-            ><img
-              class="contactosSegundo"
-              src="../Imagenes de trabajo/twitter link.png"
-              alt="link de twitter"
-          /></a>
-        </div>
+          class="adaptar col-sm-4"
+          href="https://www.facebook.com/"
+          target="_blank"
+          ><img
+            class="contactos"
+            src="../Imagenes de trabajo/facebook.svg"
+            alt="link de facebook"
+        /></a>
+        <a
+          id="sinPad"
+          class="adaptar col-sm-4"
+          href="https://twitter.com/login"
+          target="_blank"
+          ><img
+            class="contactos"
+            src="../Imagenes de trabajo/twitter.svg"
+            alt="link de twitter"
+        /></a>
       </div>
     </footer>
   </body>

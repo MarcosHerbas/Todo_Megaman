@@ -24,6 +24,10 @@
       integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
       crossorigin="anonymous"
     ></script>
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- JS -->
+    <script src="../js/java.js"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="../css/main.css" />
     <!-- TIPOGRAFIA -->
@@ -36,6 +40,14 @@
     <title>Mega Man Battle Network | Todo Megaman</title>
   </head>
   <body id="sinPad" class="container-fluid bgBody">
+    <!-- Botton Back To Top -->
+    <a
+      href="javascript:void(0);"
+      id="scroll"
+      title="Volver al comienzo"
+      class="botton-btt"
+      >Top<span></span
+    ></a>
     <!--En esta parte esta el icono y el titulo del sitio web -->
     <header id="sinPad" class="container-fluid">
       <!------------------Aca esta la barra de menu-------------------->
@@ -102,7 +114,7 @@
                 >
                   <li>
                     <a class="dropdown-item" href="saga_clasica.html"
-                      >saca clasica</a
+                      >saga clasica</a
                     >
                   </li>
                   <li>
@@ -138,12 +150,12 @@
       <!-- ------------------------------------------------ -->
     </header>
     <main class="container mainBg">
-      <section class="row justify-content-end">
-        <article class="row justify-content-center">
-          <h1 id="titulo">"Saga Battle Network"</h1>
-          <h2 id="subtitulo">Megaman B. Network</h2>
+      <section class="row mx-0">
+        <article class="row justify-content-center my-5">
+          <h1 id="titulo" class="col-sm-12 my-4">"Saga Battle Network"</h1>
+          <h2 id="subtitulo" class="col-sm-12 my-4">Megaman B. Network</h2>
           <div class="row justify-content-center">
-            <div id="imagenM">
+            <div id="imagenM" class="col-sm-12 my-5">
               <div
                 id="carouselExampleCaptions"
                 class="carousel slide"
@@ -177,7 +189,7 @@
                       id="imagenM"
                       src="../Imagenes de trabajo/saga b. network/megaman battle network portada 1.jpg"
                       class="d-block"
-                      alt="portada"
+                      alt="rockman b.network"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Portada del juego</p>
@@ -188,7 +200,7 @@
                       id="imagenM"
                       src="../Imagenes de trabajo/saga b. network/megaman b. network menu.png"
                       class="d-block"
-                      alt="menu"
+                      alt="rockman b.network menu"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Menú principal</p>
@@ -199,7 +211,7 @@
                       id="imagenM"
                       src="../Imagenes de trabajo/saga b. network/megaman b. network gameplay.png"
                       class="d-block"
-                      alt="gameplay"
+                      alt="rockman b.network gameplay"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Imagen de Gameplay</p>
@@ -233,7 +245,7 @@
               </div>
             </div>
           </div>
-          <p id="parrafos">
+          <p id="parrafos" class="col-sm-12 my-5">
             En el año 200X, la humanidad está en la "era de las redes". Todo el
             mundo tiene un PET (Terminal de Exploración Personal), un
             dispositivo todo en uno que ha sustituido a los teléfonos móviles
@@ -254,10 +266,10 @@
             Chaud, hacen que Lan y MegaMan se enfrenten contra World Three.
           </p>
         </article>
-        <article>
-          <h2 id="subtitulo">Megaman B. Network 2</h2>
+        <article class="row justify-content-center my-5">
+          <h2 id="subtitulo" class="col-sm-12 my-4">Megaman B. Network 2</h2>
           <div class="row justify-content-center">
-            <div id="imagenM">
+            <div id="imagenM" class="col-sm-12 my-5">
               <div
                 id="carouselExampleCaptions2"
                 class="carousel slide"
@@ -291,7 +303,7 @@
                       id="imagenM"
                       src="../Imagenes de trabajo/saga b. network/megaman b. network 2 portada.png"
                       class="d-block"
-                      alt="portada"
+                      alt="rockman b.network 2"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Portada del juego</p>
@@ -302,7 +314,7 @@
                       id="imagenM"
                       src="../Imagenes de trabajo/saga b. network/megaman b. network 2 menu.png"
                       class="d-block"
-                      alt="menu"
+                      alt="rockman b.network 2 menu"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Menú principal</p>
@@ -313,7 +325,7 @@
                       id="imagenM"
                       src="../Imagenes de trabajo/saga b. network/megaman b. network 2 gameplay.png"
                       class="d-block"
-                      alt="gameplay"
+                      alt="rockman b.network 2 gameplay"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Imagen de Gameplay</p>
@@ -347,7 +359,7 @@
               </div>
             </div>
           </div>
-          <p id="parrafos">
+          <p id="parrafos" class="col-sm-12 my-5">
             El siguiente verano despues de la derrota de la WWW surge un nuevo
             grupo criminal Gospel . Sus tácticas son muy diferentes en
             comparacion con la WWW ya que no parece tener un objetivo, sino que
@@ -364,11 +376,12 @@
             mucho mayor que antes Lan y Mega Man logran derrotarlo.
           </p>
         </article>
-
-        <article>
-          <h2 id="subtitulo">Megaman B. Network 3 (Blue/White)</h2>
+        <article class="row justify-content-center my-5">
+          <h2 id="subtitulo" class="col-sm-12 my-4">
+            Megaman B. Network 3 (Blue / White)
+          </h2>
           <div class="row justify-content-center">
-            <div id="imagenM">
+            <div id="imagenM" class="col-sm-12 my-5">
               <div
                 id="carouselExampleCaptions3"
                 class="carousel slide"
@@ -402,7 +415,7 @@
                       id="imagenM"
                       src="../Imagenes de trabajo/saga b. network/megaman b. network 3 portada.png"
                       class="d-block"
-                      alt="portada"
+                      alt="rockman b.network 3"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Portada del juego</p>
@@ -413,7 +426,7 @@
                       id="imagenM"
                       src="../Imagenes de trabajo/saga b. network/megaman b. network 3 menu.png"
                       class="d-block"
-                      alt="menu"
+                      alt="rockman b.network 3 menu"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Menú principal</p>
@@ -424,7 +437,7 @@
                       id="imagenM"
                       src="../Imagenes de trabajo/saga b. network/megaman b. network 3 gameplay.png"
                       class="d-block"
-                      alt="gameplay"
+                      alt="rockman b.network 3 gameplay"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Imagen de Gameplay</p>
@@ -458,7 +471,7 @@
               </div>
             </div>
           </div>
-          <p id="parrafos">
+          <p id="parrafos" class="col-sm-12 my-5">
             Meses después de que el Gospel intentara conquistar el mundo en Mega
             Man Battle Network 2, Lan y sus amigos regresan a sus vidas
             normales, hasta que la organización criminal World Three (WWW)
@@ -501,10 +514,12 @@
             de personalidad de Tadashi Hikari.
           </p>
         </article>
-        <article>
-          <h2 id="subtitulo">Megaman B. Network 4 (Red Sun/Blue Moon)</h2>
+        <article class="row justify-content-center my-5">
+          <h2 id="subtitulo" class="col-sm-12 my-4">
+            Megaman B. Network 4 (Red Sun / Blue Moon)
+          </h2>
           <div class="row justify-content-center">
-            <div id="imagenM">
+            <div id="imagenM" class="col-sm-12 my-5">
               <div
                 id="carouselExampleCaptions4"
                 class="carousel slide"
@@ -538,7 +553,7 @@
                       id="imagenM"
                       src="../Imagenes de trabajo/saga b. network/megaman b. network 4 portada.png"
                       class="d-block"
-                      alt="portada"
+                      alt="rockman b.network 4"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Portada del juego</p>
@@ -549,7 +564,7 @@
                       id="imagenM"
                       src="../Imagenes de trabajo/saga b. network/megaman b. network 4 menu.png"
                       class="d-block"
-                      alt="menu"
+                      alt="rockman b.network 4 menu"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Menú principal</p>
@@ -560,7 +575,7 @@
                       id="imagenM"
                       src="../Imagenes de trabajo/saga b. network/megaman b. network 4 gameplay.png"
                       class="d-block"
-                      alt="gameplay"
+                      alt="rockman b.network 4 gameplay"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Imagen de Gameplay</p>
@@ -594,7 +609,7 @@
               </div>
             </div>
           </div>
-          <p id="parrafos">
+          <p id="parrafos" class="col-sm-12 my-5">
             En la NAXA, los científicos descubren que un Asteroide va a gran
             velocidad hacia la tierra, pero los científicos le lanzan un láser,
             sin resultado, descubren que el asteroide tiene una Comp. por lo que
@@ -632,12 +647,12 @@
             NAXA dándose por muerto.
           </p>
         </article>
-        <article class="row justify-content-center">
-          <h2 id="subtitulo">
-            Megaman B. Network 5 (Team Protoman/Team Coloneal)
+        <article class="row justify-content-center my-5">
+          <h2 id="subtitulo" class="col-sm-12 my-4">
+            Megaman B. Network 5 (Team Protoman / Team Coloneal)
           </h2>
           <div class="row justify-content-center">
-            <div id="imagenM">
+            <div id="imagenM" class="col-sm-12 my-5">
               <div
                 id="carouselExampleCaptions5"
                 class="carousel slide"
@@ -671,7 +686,7 @@
                       id="imagenM"
                       src="../Imagenes de trabajo/saga b. network/megaman b. network 5 portada.png"
                       class="d-block"
-                      alt="portada"
+                      alt="rockman b.network 5"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Portada del juego</p>
@@ -682,7 +697,7 @@
                       id="imagenM"
                       src="../Imagenes de trabajo/saga b. network/megaman b. network 5 menu.png"
                       class="d-block"
-                      alt="menu"
+                      alt="rockman b.network 5 menu"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Menú principal</p>
@@ -693,7 +708,7 @@
                       id="imagenM"
                       src="../Imagenes de trabajo/saga b. network/megaman b. network 5 gameplay.png"
                       class="d-block"
-                      alt="gameplay"
+                      alt="rockman b.network 5 gameplay"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Imagen de Gameplay</p>
@@ -727,7 +742,7 @@
               </div>
             </div>
           </div>
-          <p id="parrafos">
+          <p id="parrafos" class="col-sm-12 my-5">
             Ha pasado un mes desde la batalla con Nebula, el Dark Chip
             Syndicate, una batalla por el destino de la tierra misma. Hoy Lan y
             sus amigos están visitando a Yuichiro Hikari en SciLab. El padre de
@@ -746,12 +761,12 @@
           </p>
         </article>
 
-        <article class="row justify-content-center">
-          <h2 id="subtitulo">
-            Megaman B. Network 6 (Cybeast Gregar/Cybeast Falzar)
+        <article class="row justify-content-center my-5">
+          <h2 id="subtitulo" class="col-sm-12 my-4">
+            Megaman B. Network 6 (Cybeast Gregar / Cybeast Falzar)
           </h2>
           <div class="row justify-content-center">
-            <div id="imagenM">
+            <div id="imagenM" class="col-sm-12 my-5">
               <div
                 id="carouselExampleCaptions6"
                 class="carousel slide"
@@ -785,7 +800,7 @@
                       id="imagenM"
                       src="../Imagenes de trabajo/saga b. network/megaman b. network 6 portada.png"
                       class="d-block"
-                      alt="portada"
+                      alt="rockman b.network 6"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Portada del juego</p>
@@ -796,7 +811,7 @@
                       id="imagenM"
                       src="../Imagenes de trabajo/saga b. network/megaman b. network 6 menu.png"
                       class="d-block"
-                      alt="menu"
+                      alt="rockman b.network 6 menu"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Menú principal</p>
@@ -807,7 +822,7 @@
                       id="imagenM"
                       src="../Imagenes de trabajo/saga b. network/megaman b. network 6 gameplay.png"
                       class="d-block"
-                      alt="gameplay"
+                      alt="rockman b.network 6 gameplay"
                     />
                     <div class="carousel-caption d-none d-md-block">
                       <p id="carruselColorText">Imagen de Gameplay</p>
@@ -841,7 +856,7 @@
               </div>
             </div>
           </div>
-          <p id="parrafos">
+          <p id="parrafos" class="col-sm-12 my-5">
             La historia comienza cuando Lan está en clases en su pueblo natal
             ACDC, en eso la señorita Mari anuncia que un alumno se va a mover de
             escuela y de pueblo. Ese alumno resulta ser Lan, y la razón de esta
@@ -878,34 +893,32 @@
     </main>
     <!--Este seria el pie de pagina donde estan los datos de copyright y los links de facebook y twitter -->
     <footer id="sinPad sinMarg" class="container-fluid bg-dark">
-      <div class="row align-items-center">
-        <p class="copyright col-sm-4">©Marcos Herbas</p>
-        <div
+      <div class="row align-items-center gap-3">
+        <img
+          class="col-sm-4 copyright"
+          src="../Imagenes de trabajo/copyright.png"
+          alt="copyright"
+        />
+        <a
           id="sinPad"
-          class="row col-sm-8 justify-content-end align-items-center"
-        >
-          <a
-            id="sinPad"
-            class="adaptar"
-            href="https://www.facebook.com/"
-            target="_blank"
-            ><img
-              class="contactos"
-              src="../Imagenes de trabajo/facebook logo.png"
-              alt="link de facebook"
-          /></a>
-
-          <a
-            id="sinPad"
-            class="adaptar"
-            href="https://twitter.com/login"
-            target="_blank"
-            ><img
-              class="contactosSegundo"
-              src="../Imagenes de trabajo/twitter link.png"
-              alt="link de twitter"
-          /></a>
-        </div>
+          class="adaptar col-sm-4"
+          href="https://www.facebook.com/"
+          target="_blank"
+          ><img
+            class="contactos"
+            src="../Imagenes de trabajo/facebook.svg"
+            alt="link de facebook"
+        /></a>
+        <a
+          id="sinPad"
+          class="adaptar col-sm-4"
+          href="https://twitter.com/login"
+          target="_blank"
+          ><img
+            class="contactos"
+            src="../Imagenes de trabajo/twitter.svg"
+            alt="link de twitter"
+        /></a>
       </div>
     </footer>
   </body>

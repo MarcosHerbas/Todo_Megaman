@@ -21,6 +21,10 @@
       integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
       crossorigin="anonymous"
     ></script>
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- JS -->
+    <script src="../js/java.js"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="../css/main.css" />
     <!-- TIPOGRAFIA -->
@@ -33,6 +37,14 @@
     <title>Mega Man Linea Temporal | Todo Megaman</title>
   </head>
     <body id="sinPad" class="container-fluid bgBody"></body>
+    <!-- Botton Back To Top -->
+    <a
+      href="javascript:void(0);"
+      id="scroll"
+      title="Volver al comienzo"
+      class="botton-btt"
+      >Top<span></span
+    ></a>
       <!--En esta parte esta el icono y el titulo del sitio web -->
       <header id="sinPad" class="container-fluid">
         <!------------------Aca esta la barra de menu-------------------->
@@ -96,7 +108,7 @@
                   >
                     <li>
                       <a class="dropdown-item" href="saga_clasica.html"
-                        >saca clasica</a
+                        >saga clasica</a
                       >
                     </li>
                     <li>
@@ -133,9 +145,9 @@
       </header>
     <main class="container mainBg">
       <section class="row justify-content-center align-items-center">
-        <article class="row col-sm-12">
-          <h1 id="titulo" class="col-sm-12">
-            ¿Donde empieza y termina la saga de Megaman?
+        <article class="row col-sm-12 my-5">
+          <h1 id="titulo" class="col-sm-12 my-5">
+            ¿Donde empieza y termina la saga de Mega man?
           </h1>
           <p id="parrafos" class="col-sm-12">
             Esta linea temporal empieza con su saga clasica en donde el
@@ -155,48 +167,46 @@
             man Juno.
           </p>
         </article>
-        <article class="row col-sm-12">
-          <h2 id="subtitulo" class="col-sm-12">Linea temporal</h2>
+        <article class="row col-sm-12 my-5">
+          <h2 id="subtitulo" class="col-sm-12 my-5">Linea temporal</h2>
           <p id="parrafos" class="centrarTexto col-sm-12">
             Aca les dejo una linea temporal asi como el resumen de lo dicho
             anteriormente
           </p>
         </article>
-        <div class="row col-sm-12">
+        <div class="row col-sm-12 my-5">
           <img src="../Imagenes de trabajo/Linea Temporal.jpg" alt="Linea Temporal">
         </div>
       </section>
     </main>
     <!--Este seria el pie de pagina donde estan los datos de copyright y los links de facebook y twitter -->
     <footer id="sinPad sinMarg" class="container-fluid bg-dark">
-      <div class="row align-items-center">
-        <p class="copyright col-sm-4">©Marcos Herbas</p>
-        <div
+      <div class="row align-items-center gap-3">
+        <img
+          class="col-sm-4 copyright"
+          src="../Imagenes de trabajo/copyright.png"
+          alt="copyright"
+        />
+        <a
           id="sinPad"
-          class="row col-sm-8 justify-content-end align-items-center"
-        >
-          <a
-            id="sinPad"
-            class="adaptar"
-            href="https://www.facebook.com/"
-            target="_blank"
-            ><img
-              class="contactos"
-              src="../Imagenes de trabajo/facebook logo.png"
-              alt="link de facebook"
-          /></a>
-
-          <a
-            id="sinPad"
-            class="adaptar"
-            href="https://twitter.com/login"
-            target="_blank"
-            ><img
-              class="contactosSegundo"
-              src="../Imagenes de trabajo/twitter link.png"
-              alt="link de twitter"
-          /></a>
-        </div>
+          class="adaptar col-sm-4"
+          href="https://www.facebook.com/"
+          target="_blank"
+          ><img
+            class="contactos"
+            src="../Imagenes de trabajo/facebook.svg"
+            alt="link de facebook"
+        /></a>
+        <a
+          id="sinPad"
+          class="adaptar col-sm-4"
+          href="https://twitter.com/login"
+          target="_blank"
+          ><img
+            class="contactos"
+            src="../Imagenes de trabajo/twitter.svg"
+            alt="link de twitter"
+        /></a>
       </div>
     </footer>
   </body>
