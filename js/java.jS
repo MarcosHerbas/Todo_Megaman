@@ -1,4 +1,4 @@
-// Botton Back To Top
+/* "Botton Back To Top" */
 $(document).ready(function () {
   $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
